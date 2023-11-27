@@ -1,0 +1,1 @@
+find . -name '*.py' | entr -cr python3 -m capture_app.main
