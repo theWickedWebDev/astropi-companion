@@ -1,17 +1,6 @@
-from quart import request, current_app
-import subprocess
-import os
-import json
-from astropy.io import fits
-from astropy.wcs import WCS
-from astropy import units as u
-from astropy.coordinates import SkyCoord
-from PIL import Image
-import requests
+from quart import request
 from capture_app._response import returnResponse
 from ._blueprint import blueprint
-from capture_app.util.arc_second_pp import arcSecondsPerPixel 
-from .util.wcs_by_pixel import getCoordsOfPixel
 from .util.solve import solveField
 
 @blueprint.route("/field/", methods=["POST"])
@@ -19,7 +8,7 @@ async def solve_field():
     try:
         res = await request.json
         
-        solve_response = solveField(image_url=res['image'], returnWithData=True, returnWithPoints=True, noplots=True)
+        solve_response = solveField(image_url=res['image'], returnWithData=True, returnWithPoints=True, noplots=False)
 
         # c = SkyCoord(ra=RA*u.degree, dec=DEC*u.degree, frame='icrs')
 
