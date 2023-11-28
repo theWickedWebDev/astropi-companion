@@ -16,33 +16,6 @@ import re
 #  TODO move this to a centralized place
 base_image_directory = "/home/telescope/captures/"
 
-@blueprint.route('/list/', defaults={'path': ''})
-@blueprint.route("/list/<path:path>", methods=["GET"])
-async def list_images(path):
-    print('bang')
-    try:
-        image_directory = base_image_directory
-
-        if path:
-            image_directory = image_directory + path
-
-        if image_directory[-1] != '/':
-            image_directory = image_directory + '/'
-            
-        print(image_directory)
-        
-        _list = glob.glob(image_directory + '*', recursive=True)
-        print(_list)
-        _filtered_files = [x.replace(base_image_directory, '') for x in _list]
-        filtered_files = [x for x in _filtered_files if '.' in x and ('.jpg' in x or '.cr2' in x or '.png' in x)]
-        _filtered_stacks = [x.replace(image_directory, '') for x in _list]
-        filtered_stacks = [x for x in _filtered_stacks if '.' not in x]
-
-        return await returnResponse({ "files": filtered_files, "stacks": filtered_stacks }, 200)
-    except Exception as e:
-        return await returnResponse({ "error": e.args[0] }, 404)
-
-
 @blueprint.route('/', defaults={'path': ''})
 @blueprint.route('/<path:path>')
 async def get_img(path):
