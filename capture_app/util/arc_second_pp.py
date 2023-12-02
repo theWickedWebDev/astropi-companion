@@ -1,12 +1,10 @@
-from quart import current_app
-
 # Pixel Size / Telescope Focal Length ) X 206.265.
 def arcSecondsPerPixel(fl, range_factor=.1):
-        pixel_size = current_app.config['CAMERA_PIXEL_SIZE']
-        arc_second_const = current_app.config['ARC_SECOND_CONSTANT']
+        CAMERA_PIXEL_SIZE=4.3
+        ARC_SECOND_CONSTANT=206.265
         
         return {
-            "high": (pixel_size / (fl*(1 + range_factor))) * arc_second_const,
-            "low": (pixel_size / (fl*(1 - range_factor))) * arc_second_const,
-            "middle": (pixel_size / fl) * arc_second_const
+            "high": (CAMERA_PIXEL_SIZE / (fl*(1 + range_factor))) * ARC_SECOND_CONSTANT,
+            "low": (CAMERA_PIXEL_SIZE / (fl*(1 - range_factor))) * ARC_SECOND_CONSTANT,
+            "middle": (CAMERA_PIXEL_SIZE / fl) * ARC_SECOND_CONSTANT
         }
