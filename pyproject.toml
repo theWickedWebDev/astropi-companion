@@ -1,12 +1,12 @@
 [tool.poetry]
-name = "capture-app"
+name = "api"
 version = "0.1.0"
 description = ""
 authors = ["Stephen <stephen@theyoungs.cloude>"]
 readme = "README.md"
 
 [tool.poetry.dependencies]
-python = "^3.10"
+python = "^3.12"
 quart-trio = "^0.11.1"
 wand = "^0.6.13"
 pillow = "^10.1.0"
@@ -19,6 +19,11 @@ regions = "^0.8"
 scipy = "^1.11.4"
 trio = "^0.23.1"
 quart = "^0.19.4"
+colorama = "^0.4.6"
+requests-async = "^0.6.2"
+python-dateutil = "^2.8.2"
+pydantic = "^2.5.3"
+quart-session = "^3.0.0"
 
 
 [build-system]
