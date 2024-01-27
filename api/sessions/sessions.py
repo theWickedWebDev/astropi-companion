@@ -3,7 +3,6 @@ import uuid
 import glob
 import json
 import os
-import time
 from pydantic.v1.utils import deep_update
 from astropy.coordinates import SkyCoord
 
@@ -187,7 +186,6 @@ async def start_session_by_id(session_id):
         # TELESCOPE API REQUEST TO GOTO TARGET COORDINATES
         try:
             controlTelescope(TelescopeControlMethods.CALIBRATE.value, telescope_target)
-            time.sleep(2)
             try:
                 controlTelescope(TelescopeControlMethods.GOTO.value, telescope_target)
             except Exception as e:

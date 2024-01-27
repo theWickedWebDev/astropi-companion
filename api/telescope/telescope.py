@@ -3,7 +3,6 @@ from api.util import returnResponse
 import numpy as np
 from datetime import datetime
 from astropy.coordinates import SkyCoord
-import time
 
 from api.util import get_session_data, deep_update_telescope_file, read_telescope_file, returnResponse, generateCameraConfigDict, setCurrentConfigValue, controlTelescope, TelescopeControlMethods, capturePhoto, solveField, TelescopeTargetTypes, session_exists, appendGeneratedData, CALIBRATION_CAMERA_SETTINGS, MOCKED_LIGHT_FRAME_G1_00_JPG, MOCKED_LIGHT_FRAME_G1_01_JPG, MOCKED_LIGHT_FRAME_G1_02_JPG, MOCKED_LIGHT_FRAME_G1_03_JPG, MOCKED_LIGHT_FRAME_G1_04_JPG, MOCKED_LIGHT_FRAME_G1_05_JPG, deep_update_session
 
@@ -117,7 +116,6 @@ async def calibrate_telescope():
                     "key": TelescopeTargetTypes.RA_DEC.value,
                     "value": solved_center
                 })  
-                time.sleep(3)
                 controlTelescope(TelescopeControlMethods.GOTO.value, { "key": "RA_DEC", "value": {
                     "ra": desired_coords_hms_dms[0],
                     "dec": desired_coords_hms_dms[1]
