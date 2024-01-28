@@ -1,0 +1,49 @@
+{
+  "id": "376c833f-fedc-4a48-8c34-3eb6c8259400",
+  "modified_time": null,
+  "status": "CREATED",
+  "frames": {
+    "required": {
+      "lights": 50,
+      "darks": 25,
+      "flats": 25
+    },
+    "captured": {
+      "lights": 0,
+      "darks": 0,
+      "flats": 0
+    },
+    "lights": {},
+    "darks": {},
+    "flats": {}
+  },
+  "camera": {
+    "config": {
+      "iso": "400",
+      "aeb": "Off",
+      "drivemode": "0",
+      "autoexposuremode": "MANUAL",
+      "imageformat": "RAW+JPG",
+      "picturestyle": "Standard",
+      "shutterspeed": "30"
+    },
+    "lens": {
+      "name": "EF-S18-55mm f/3.5-5.6 IS II",
+      "aperture": 6.3,
+      "focal_length": 18
+    }
+  },
+  "details": {
+    "name": "Bode's Galaxy",
+    "description": "Multiple galaxies. Cigar galaxy, The Garland Galaxy, NGC2976",
+    "scheduled_start": "2025-04-08T05:18:20.497",
+    "timeUntilEvent": null
+  },
+  "target": {
+    "key": "RA_DEC",
+    "value": {
+      "dec": "68d43m51.4s",
+      "ra": "10h3m22.33s"
+    }
+  }
+}

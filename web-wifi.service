@@ -1,0 +1,12 @@
+[Unit]
+Description=AstroPi Wifi Manager App
+After=network.target
+
+[Service]
+Restart=always
+User=pi
+WorkingDirectory=/home/pi/astropi-companion
+ExecStart=poetry run python -m src.app
+
+[Install]
+WantedBy=multi-user.target

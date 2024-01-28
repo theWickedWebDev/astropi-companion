@@ -1,0 +1,32 @@
+{% extends "index.html" %}
+{% block title %}Dashboard{% endblock %}
+
+{% block content %}
+<div class="form-wrap">
+    <table class="sessions-table">
+        {% for session in sessions %}
+        <tbody>
+            <tr>
+                <th>Name</th>
+                <td>{{ session.name }}</td>
+            </tr>
+            <tr>
+                <th>Description</th>
+                <td>{{ session.description }}</td>
+            </tr>
+            <tr>
+                <th>Start</th>
+                <td>{{ session.start }}</td>
+            </tr>
+            <tr>
+                <th>Status</th>
+                <td>{{ session.status }}</td>
+            </tr>
+            <tr class="actions">
+                <td colspan="2"><button class="btn btn-primary">Set Active</button></td>
+            </tr>
+        </tbody>
+        {% endfor %}
+    </table>
+</div>
+{% endblock %}

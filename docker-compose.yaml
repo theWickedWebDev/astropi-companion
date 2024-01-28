@@ -1,0 +1,24 @@
+version: "3.9"
+services:
+  astropi:
+    container_name: astropi-companion
+    # network_mode: "host"
+    # build: "."
+    image: astropi
+    restart: always
+    ports:
+      - "80:5000"
+    volumes:
+      - /home/astrophotography/captures/:/home/astrophotography/captures/
+    # deploy:
+    #   resources:
+    #     limits:
+    #       cpus: "1"
+    #       memory: 1G
+    #     reservations:
+    #       cpus: "0.3"
+    #       memory: 300M
+    # logging:
+    #   options:
+    #     max-size: "5m"
+    #     max-file: "3"

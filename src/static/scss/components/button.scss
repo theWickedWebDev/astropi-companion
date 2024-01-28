@@ -1,0 +1,18 @@
+.btn {
+    background: #fff;
+    border: solid 1px #000;
+    padding: 4px 8px;
+    font-weight: bold;
+    border-radius: 4px;
+    cursor: pointer;
+
+    &-primary {
+        background-color: #417f90;
+        color: #fff;
+        border: 0;
+
+        &:hover {
+            background-color: rgba(65, 127, 144, 0.8);
+        }
+    }
+}
