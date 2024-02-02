@@ -1,0 +1,238 @@
+{% extends "layouts/dashboard.html" %}
+{% set active_page = "telescope" %}
+{% block head %}
+<script>
+    let calibratedImageUrl, image_url, combined_img_url;
+
+    function loadSolvedImage(calibrate_res) {
+        console.log(calibrate_res)
+
+
+        combined_img_url = "{{url_for('web.img.get_img', path='111')}}"
+            .replace('111', calibrate_res.data.solved_image)
+        solve_url = "{{url_for('web.img.get_img', path='111')}}"
+            .replace('111', calibrate_res.data.annotated_image)
+
+        image(combined_img_url, '#calibratedImageUrlPlots', { class: "wheelzoom img-fluid", style: "position: absolute; top: 0; left: 0" })
+        image(solve_url, '#calibratedImageUrl', { class: "wheelzoom img-fluid" })
+
+        calibratedImageUrl = combined_img_url
+        wheelzoom(document.querySelectorAll('.wheelzoom'), { zoom: 0.05 });
+
+        if (telescope.data.arcseconds_per_pixel) {
+            $('#cardTitle').append(
+                `<span title="${telescope.last_plate_solve.arcseconds_per_pixel}">
+                    <span class="badge text-bg-light">Scale</span>: ${(telescope.last_plate_solve.arcseconds_per_pixel).toFixed(4)} <small>arcseconds/pixel</small>
+                </span>`
+            )
+        }
+        /*
+        if (telescope.last_plate_solve.image_path) {
+            $('#cardTitle').html(
+                `<span class="badge text-bg-light">Ra</span><span>${telescope.last_plate_solve.center.hmsdms.ra}</span><br/><span class="badge text-bg-light">Dec</span><span>${telescope.last_plate_solve.center.hmsdms.dec}</span>`
+            )
+
+            
+
+            $('#solveTime').html(telescope.last_plate_solve.time)
+
+            const toleranceWarning = `
+                <div class="alert alert-warning d-flex flex-column align-items-center" role="alert">
+                    <span>Frame was outside of tolerance. Recalibrated and centered.</span>
+                    <div>
+                        <span class="badge text-bg-light">RAΔ ${telescope.deviation[0].hmsdms.ra}</span>
+                        <span class="badge text-bg-light">DECΔ ${telescope.deviation[0].hmsdms.dec}</span>
+                    </div>
+                </div>
+            `
+            const toleranceSuccess = `
+                <div class="alert alert-success d-flex align-items-center" role="alert">
+                    Frame within tolerance
+                </div>
+            `
+
+            $('#deviation_tolerance')
+                .html(
+                    telescope.deviation[0].outside_tolerance
+                        ? toleranceWarning
+                        : toleranceSuccess
+                )
+            */
+    }
+
+
+    function capturePreview() {
+        fetch("{{ url_for('web.telescope.calibrate_telescope')}}", { method: 'POST' })
+            .then(async (response) => {
+                if (response.ok) {
+
+                } else {
+                    throw new Error()
+                }
+                res = await response.json()
+                window.astropi.telescope = res;
+                loadSolvedImage(res)
+            })
+            .catch(function (e) {
+                console.log(e);
+            });
+    }
+
+    $(document).ready(function () {
+        wheelzoom(document.querySelectorAll('.wheelzoom'), { zoom: 0.05 });
+        loadSolvedImage({
+            "data": {
+                "annotated_image": "mocks/light-frame_01_001-composite.jpg",
+                "arcseconds_per_pixel": 3.0610963432304494,
+                "bounds": null,
+                "center": [
+                    "09h56m23.4435684s",
+                    "+69d01m20.16660144s"
+                ],
+                "files": [
+                    "/mocks/solves/light-frame_01_001/light-frame_01_001-plot.png",
+                    "/mocks/solves/light-frame_01_001/light-frame_01_001.rdls",
+                    "/mocks/solves/light-frame_01_001/light-frame_01_001.axy",
+                    "/mocks/solves/light-frame_01_001/light-frame_01_001-indx.xyls",
+                    "/mocks/solves/light-frame_01_001/light-frame_01_001.wcs",
+                    "/mocks/solves/light-frame_01_001/light-frame_01_001.new",
+                    "/mocks/solves/light-frame_01_001/light-frame_01_001.corr",
+                    "/mocks/solves/light-frame_01_001/light-frame_01_001.solved",
+                    "/mocks/solves/light-frame_01_001/light-frame_01_001.match"
+                ],
+                "image_height": 3456,
+                "image_width": 5184,
+                "objects": {
+                    "2959": {
+                        "constellation": "UMa",
+                        "dec": "+68d36m",
+                        "description": "faint | pretty large | round | very gradually a little brighter middle | stars, north",
+                        "id": "2959",
+                        "mag": 14,
+                        "n_mag": "Photographic",
+                        "object": "2959",
+                        "ra": "9h45.1m"
+                    },
+                    "2961": {
+                        "constellation": "UMa",
+                        "dec": "+68d36m",
+                        "description": "considerably faint | small | north following, 2959",
+                        "id": "2961",
+                        "mag": 0,
+                        "n_mag": "Visual",
+                        "object": "2961",
+                        "ra": "9h45.4m"
+                    },
+                    "2976": {
+                        "constellation": "UMa",
+                        "dec": "+67d55m",
+                        "description": "bright | very large | stars, involved(ed|ing)",
+                        "id": "2976",
+                        "mag": 10.2,
+                        "n_mag": "Visual",
+                        "object": "2976",
+                        "ra": "9h47.3m"
+                    },
+                    "3031": {
+                        "constellation": "UMa",
+                        "dec": "+69d4m",
+                        "description": "remarkable, eB | extremely large | gsvmbMBN;, =, M81",
+                        "id": "3031",
+                        "mag": 6.9,
+                        "n_mag": "Visual",
+                        "object": "Bode's nebulae",
+                        "ra": "9h55.6m"
+                    },
+                    "3034": {
+                        "constellation": "UMa",
+                        "dec": "+69d41m",
+                        "description": "Very bright | very large",
+                        "id": "3034",
+                        "mag": 8.4,
+                        "n_mag": "Visual",
+                        "object": "Bode's nebulae",
+                        "ra": "9h55.8m"
+                    },
+                    "3077": {
+                        "constellation": "UMa",
+                        "dec": "+68d44m",
+                        "description": "considerably bright | considerably large | much brighter middle | round, with, ray",
+                        "id": "3077",
+                        "mag": 9.9,
+                        "n_mag": "Visual",
+                        "object": "3077",
+                        "ra": "10h3.3m"
+                    }
+                },
+                "orientation": {
+                    "north": 83.9417662734246,
+                    "south": 96.0582337265754
+                },
+                "plot_layer_image": "mocks/solves/light-frame_01_001/light-frame_01_001-plot.png",
+                "points": [],
+                "solved_image": "mocks/light-frame_01_001.jpg"
+            },
+            "deviation": [
+                {
+                    "arcseconds": 3.0610963432304494,
+                    "frame": "mocks/light-frame_01_001.jpg",
+                    "solved": [
+                        "09h56m23.4435684s",
+                        "+69d01m20.16660144s"
+                    ],
+                    "time": "02-01-2024 10:47:38",
+                    "within_tolerance": true
+                }
+            ],
+            "target": {
+                "coords": [
+                    "09h56m23.4435684s",
+                    "+69d01m20.16660144s"
+                ],
+                "name": "",
+                "type": "RA_DEC"
+            },
+            "target_coords": [
+                "09h56m23.4435684s",
+                "+69d01m20.16660144s"
+            ]
+        })
+    });
+</script>
+{% endblock %}
+{% block dashboard_content %}
+<div class="row align-items-start justify-content-center p-0">
+    <div class="col-10">
+        <div class="card">
+            <div class="card-header"><i id="solveTime"></i></div>
+            <span id="solvedimageswrap" style="position: relative;">
+                <span id="calibratedImageUrl"></span>
+                <span id="calibratedImageUrlPlots"></span>
+            </span>
+            <div class="card-body">
+                <div class="form-check form-switch" style="display: inline-block">
+                    <label class="form-check-label" for="flexSwitchCheckDefault">WCS
+                        <input id="toggleWcsBtn" class="form-check-input" type="checkbox" role="switch"
+                            id="flexSwitchCheckDefault"
+                            onchange="$('#calibratedImageUrlPlots').toggle(); $('#toggleWcsBtn').toggleClass('btn-info').toggleClass('btn-outline-info');">
+                    </label>
+                </div>
+                <h6 id="cardTitle" class="card-title"></h6>
+                <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                    card's content.</p> -->
+            </div>
+            <ul class="list-group list-group-flush">
+                <!-- <li class="list-group-item">asdf</li> -->
+                <li class="list-group-item">
+                    <div id="deviation_tolerance"></div>
+                </li>
+                <!-- <li class="list-group-item">A third item</li> -->
+            </ul>
+            <div class="card-body">
+                <!-- <a href="#" class="card-link">Another link</a> -->
+                <button class="btn btn-info card-link" onclick="capturePreview()">Capture & Calibrate</button>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

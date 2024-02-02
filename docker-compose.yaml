@@ -1,0 +1,25 @@
+version: "3.9"
+services:
+  astropi:
+    container_name: astropi
+    # network_mode: "host"
+    # build: "."
+    image: astropi
+    restart: always
+    depends_on:
+      - redis
+    ports:
+      - 80:5001
+    volumes:
+      - /home/astrophotography/captures/:/app/captures/
+  redis:
+    container_name: redis
+    image: redis:6.2-alpine
+    network_mode: "host"
+    restart: always
+    command: redis-server
+    volumes:
+      - cache:/data
+volumes:
+  cache:
+    driver: local

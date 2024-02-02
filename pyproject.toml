@@ -1,0 +1,33 @@
+[tool.poetry]
+name = "api"
+version = "0.1.0"
+description = ""
+authors = ["Stephen <stephen@theyoungs.cloude>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+quart-trio = "^0.11.1"
+wand = "^0.6.13"
+pillow = "^10.1.0"
+requests = "^2.31.0"
+python-dotenv = "^1.0.0"
+astropy = "^5.3.4"
+pylint = "^3.0.2"
+opencv-python = "^4.8.1.78"
+regions = "^0.8"
+scipy = "^1.11.4"
+trio = "^0.23.1"
+quart = "^0.19.4"
+colorama = "^0.4.6"
+requests-async = "^0.6.2"
+python-dateutil = "^2.8.2"
+pydantic = "^2.5.3"
+quart-session = "^3.0.0"
+babel = "^2.14.0"
+pygments = "^2.17.2"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
