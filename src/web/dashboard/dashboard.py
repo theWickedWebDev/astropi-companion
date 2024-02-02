@@ -7,6 +7,7 @@ import json
 
 from ._blueprint import blueprint
 from ..sequence.sequence import get_sequences
+from ..camera.camera_class import get_available_usb_devices
 
 
 def get_camera_config():
@@ -57,12 +58,15 @@ async def render_dashboard(page):
     tele = read_telescope_file()
     weather = fetchWeather()
     sequences = get_sequences()
+    _cameras = await get_available_usb_devices()
+    cameras = [{"model": c.model, "port": c.port} for c in _cameras]
 
     return await render_template(
         page,
         telescope=tele,
         sequences=sequences,
-        camera_config={},  # config,
+        cameras=cameras,
+        camera={},  # config,
         weather=weather
     )
 

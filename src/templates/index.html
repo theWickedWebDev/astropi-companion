@@ -28,7 +28,8 @@
     <script>
         window.astropi = {}
         window.astropi.settings = {}
-        window.astropi.camera_config = JSON.parse('{{camera_config | tojson}}')
+        window.astropi.camera = JSON.parse('{{camera | tojson}}')
+        window.astropi.cameras = JSON.parse('{{cameras | tojson}}')
         window.astropi.weather = JSON.parse('{{weather | tojson}}')
         window.astropi.plate_solve = {}
         window.astropi.telescope = JSON.parse('{{telescope | tojson}}')

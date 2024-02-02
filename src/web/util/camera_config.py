@@ -1,9 +1,11 @@
 from copy import deepcopy
 import json
 
-LAST_CAMERA_SETTINGS='/tmp/astro.camera-settings.tmp'
+LAST_CAMERA_SETTINGS = '/tmp/astro.camera-settings.tmp'
 
-def configOption(v, i): return { "value": v, "index": i }
+
+def configOption(v, i): return {"value": v, "index": i}
+
 
 ISO = {
     "_config": "iso",
@@ -32,7 +34,7 @@ DRIVE_MODE = {
     '10': configOption("Single", 2)
 }
 
-AUTO_EXPOSURE_MODE={
+AUTO_EXPOSURE_MODE = {
     "_config": "autoexposuremode",
     "_default": "Manual",
     "MANUAL": configOption("Manual", 3),
@@ -113,9 +115,10 @@ SHUTTERSPEEDS = {
     1/4000: "1/4000"
 }
 
-SETTING_OPTIONS = [ISO, AEB, AUTO_EXPOSURE_MODE, IMAGE_FORMAT, PICTURE_STYLE, DRIVE_MODE]
+SETTING_OPTIONS = [ISO, AEB, AUTO_EXPOSURE_MODE,
+                   IMAGE_FORMAT, PICTURE_STYLE, DRIVE_MODE]
 
-DEFAULT_CAMERA_SETTINGS_KEYS=[
+DEFAULT_CAMERA_SETTINGS_KEYS = [
     "iso",
     "shutterspeed",
     "imageformat",
@@ -137,6 +140,7 @@ CAMERA_SETTINGS_DICT_BY_NAME = {
     k['_config']: k for k in SETTING_OPTIONS
 }
 
+
 def generateCameraConfigDict(values={}):
     errors = []
     settings = deepcopy(CAMERA_SETTINGS_DICT_DEFAULTS)
@@ -151,7 +155,7 @@ def generateCameraConfigDict(values={}):
                     settings['exposure'] = str(int(value)) + 's'
                 else:
                     try:
-                        v=list(SHUTTERSPEEDS.items())[-1][1]
+                        v = list(SHUTTERSPEEDS.items())[-1][1]
                         for x in SHUTTERSPEEDS.keys():
                             if float(value) >= x:
                                 v = SHUTTERSPEEDS[x]
@@ -163,7 +167,7 @@ def generateCameraConfigDict(values={}):
                 settings[key] = CAMERA_SETTINGS_DICT_BY_NAME[key][value]['value']
         except Exception as e:
             errors.append('[' + key + ': ' + value + '] not applied')
-        
-    with open(LAST_CAMERA_SETTINGS, 'w') as convert_file: 
+
+    with open(LAST_CAMERA_SETTINGS, 'w') as convert_file:
         convert_file.write(json.dumps(settings))
     return settings, errors

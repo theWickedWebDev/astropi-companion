@@ -2,8 +2,7 @@
 <!--  -->
 {% from "pages/dashboard/camera.preview.html" import camera_preview_body with context %}
 {% from "pages/dashboard/camera.capture.html" import camera_capture_body with context %}
-{% from "pages/dashboard/camera.settings.html" import camera_settings_body, camera_actions_body, camera_other_body with
-context %}
+{% from "pages/dashboard/camera.settings.html" import camera_settings_body with context %}
 {% from "pages/dashboard/camera.planning.html" import camera_planning_body with context %}
 
 <!-- Navigation Tab Macro -->
@@ -61,26 +60,18 @@ context %}
 </script>
 {% endblock %}
 {% block dashboard_content %}
-<h3 id="cameraName" class="m-3 mb-0">
-    {{camera_config.status.cameramodel.value}}
-    <i
-        class="bi bi-battery-charging fs-1 {% if camera_config.status.batterylevel.value == '100%' %}text-success{% else %}text-warning{% endif %}"></i>
-</h3>
-<h6>{{camera_config.status.lensname.value}}</h6>
+<h3 id="cameraName" class="m-3 mb-0">camera</h3>
+<h6>lens</h6>
 <ul class="nav nav-tabs mt-3" id="myTab" role="tablist">
     {{ camera_tabs(name="preview", active=true) }}
     {{ camera_tabs(name="capture", active=false) }}
-    {{ camera_tabs(name="settings", active=false) }}
-    {{ camera_tabs(name="actions", active=false) }}
-    {{ camera_tabs(name="other", active=false) }}
+    {{ camera_tabs(name="config", active=false) }}
     {{ camera_tabs(name="planning", active=false) }}
 </ul>
 <div class="tab-content">
     {{ camera_preview_body() }}
     {{ camera_capture_body() }}
     {{ camera_settings_body() }}
-    {{ camera_actions_body() }}
-    {{ camera_other_body() }}
     {{ camera_planning_body() }}
 </div>
 {% endblock %}
