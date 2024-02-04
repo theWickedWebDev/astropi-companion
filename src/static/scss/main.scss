@@ -1,10 +1,6 @@
-@import 'reset.scss',
-'components/footer.scss',
-'components/header.scss',
-'components/sidebar.scss',
+@import 'vendor/toast.scss',
 'components/content.scss',
-'components/button.scss',
-'components/tables.scss'
+'components/spinner.scss'
 ;
 
 * {
