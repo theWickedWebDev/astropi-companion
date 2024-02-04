@@ -10,49 +10,13 @@
 </head>
 
 <body>
-    <header id="mainHeader">
-        <img class="logo" src="{{url_for('static', filename='img/logo.png')}}" />
-        <button class="btn" onclick="capturePreview()">Capture Preview</button>
-    </header>
     <main id="mainContent">
-        <aside id="mainSidebar">
-            <ul>
-                <li>1</li>
-                <li>2</li>
-                <li>3</li>
-                <li>4</li>
-                <li>5</li>
-                <li>6</li>
-            </ul>
-            <ul>
-                <li>1</li>
-                <li>2</li>
-                <li>3</li>
-                <li>4</li>
-                <li>5</li>
-                <li>6</li>
-            </ul>
-        </aside>
         <div id="content">{% block content %}{% endblock %}</div>
     </main>
     {% block footer %}
     <!-- &copy; Copyright 2010 by <a href="http://domain.invalid/">you</a>. -->
     {% endblock %}
     </div>
-
-    <script>
-        function capturePreview() {
-
-            fetch(`http://astropi.local/api/telescope/calibrate`)
-                .then((response) => {
-                    console.log(response.status);
-                    return response.json();
-                })
-                .then(function (data) {
-                    console.log(data);
-                });
-        }
-    </script>
 </body>
 
 </html>
