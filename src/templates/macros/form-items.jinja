@@ -1,0 +1,121 @@
+{% macro label(id, text, extra="") -%}
+<div class="col text-start">
+    <label class="form-label fw-semibold p-2" style="font-size: 12px" id="label_{{id}}" for="{{id}}">
+        {{text}}
+        {% if extra != "" %}
+        <br /><small>({{extra}})</small>
+        {% endif %}
+    </label>
+</div>
+{%- endmacro %}
+
+{% macro toggleInput(name, text, active, disabled) -%}
+<div class="row mb-2">
+    {% set labelid = name.split('/')[-1] %}
+    {{ label(labelid, text)}}
+    <div class="col text-start">
+        <div class="form-check form-switch">
+            <input {% if active=="1" or active=="2" %}checked{% endif %} {% if disabled==True %}disabled{% endif %}
+                onchange="window.astropi.settings.onchange(event)" class="form-check-input" type="checkbox"
+                role="switch" data-configid="{{name}}" data-byvalue="true" id="{{name.split('/')[-1]}}">
+        </div>
+    </div>
+</div>
+{%- endmacro %}
+
+{% macro textInput(name, text, active, disabled) -%}
+<div class="row mb-2">
+    {% set labelid = name.split('/')[-1] %}
+    {{ label(labelid, text)}}
+    <div class="col text-start">
+        <div>
+            <input type="text" id="{{name.split('/')[-1]}}" data-configid="{{name}}" data-byvalue="true"
+                onblur="window.astropi.settings.onchange(event)" {% if disabled==True %}disabled="true" {% endif %}
+                value="{{active}}">
+        </div>
+    </div>
+</div>
+{%- endmacro %}
+
+{% macro selectInput(name, text, options, active, disabled) -%}
+<script>
+    function addCustomShutterSpeed(force) {
+        const isShutterBulb = force || window.astropi.camera_config.find(c => c.id === '/main/capturesettings/shutterspeed').current === 'bulb'
+        if (isShutterBulb) {
+            $('select#exposure').show()
+            $('label#label_exposure').show()
+        } else {
+            $('select#exposure').hide()
+            $('label#label_exposure').hide()
+        }
+    }
+    $(document).ready(function () {
+        addCustomShutterSpeed()
+
+        $('select#{{name.split("/")[-1]}}').on('input', (event) => {
+            const isCustomConfig = $(event.target).attr('data-custom-config') || false
+            const isShutterSpeed = [
+                event.target.tagName == 'SELECT',
+                $(event.target).attr('id') == 'shutterspeed',
+            ].every(a => a)
+            const changingToBulb = event.target.value == "0"
+
+            if (isShutterSpeed) {
+                if (changingToBulb) {
+                    addCustomShutterSpeed(true)
+                } else {
+                    $('#bulbexposure').remove()
+                }
+            }
+
+            window.astropi.settings.onchange(event, isCustomConfig)
+            // Sets value to None, if "None" exists - These are special
+            // selections, and represent specific actions a user can take
+            // and not setting a constant config change
+            if ($(event.target).find('option:contains("None")').length == 1) {
+                opt = $(event.target).find('option:contains("None")')
+                console.log(opt.prop('value'))
+                $(event.target).val(opt.prop('value'))
+            }
+        })
+    });
+</script>
+<div class="row mb-2">
+    {% set extra_text = '' %}
+    {% if text == 'Shutter Speed' %}
+    {% set extra_text = 'Preview & Capture only' %}
+    {% endif %}
+    {% set labelid = name.split('/')[-1] %}
+    {{ label(labelid, text, extra_text)}}
+    {% if text == 'Custom Exposure'%}
+    {% set customConfig = true %}
+    {% else %}
+    {% set customConfig = false %}
+    {% endif %}
+    <div class="col text-start">
+        <select id="{{name.split('/')[-1]}}" data-custom-config="{{customConfig}}" data-configid="{{name}}"
+            class="form-select camera-settings-select" aria-label="{{text}}" {% if disabled==True %}disabled{% endif %}
+            data-byvalue="false">
+            {% for o in options %}
+            {% set selected = active==o %}
+            {% if text == 'ISO Speed' %}
+            {% set o = 'ISO' + o %}
+            {% endif %}
+            {% if text == 'Aperture' %}
+            {% set o = 'ƒ/' + o %}
+            {% endif %}
+            {% if text == 'Shutter Speed' and o != 'bulb'%}
+            {% set o = o + 's' %}
+            {% endif %}
+            {% if text == 'Shutter Speed' and o == 'bulb'%}
+            {% set o = 'BULB' %}
+            {% endif %}
+            <option value="{% if customConfig %}{{o}}{% else %}{{loop.index - 1}}{% endif %}" {% if selected
+                %}selected{% endif %}>
+                {{o}}
+            </option>
+            {% endfor %}
+        </select>
+    </div>
+</div>
+{%- endmacro %}

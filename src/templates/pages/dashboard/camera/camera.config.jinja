@@ -1,0 +1,70 @@
+{% from "macros/form-items.jinja" import toggleInput, selectInput, textInput with context %}
+
+{% macro camera_config_body_content(d) -%}
+{% if d.type == 'TOGGLE' %}
+{{ toggleInput(name=d.id, text=d.label, active=d.current, disabled=d.readonly)}}
+{% endif %}
+
+{% if d.type == 'RADIO' %}
+{{ selectInput(name=d.id, text=d.label, options=d.options, active=d.current, disabled=d.readonly )}}
+{% endif %}
+
+{% if d.type == 'TEXT' %}
+{{ textInput(name=d.id, text=d.label, active=d.current, disabled=d.readonly)}}
+{% endif %}
+{%- endmacro %}
+
+{% macro camera_config_body() -%}
+<script>
+    function saveConfiguration(value) {
+
+        url = "{{url_for('web.dashboard.camera.save_camera_setting', name='11')}}"
+            .replace('11', encodeURIComponent(value))
+
+        fetch(url, { method: "POST" })
+            .then(async (response) => {
+                if (response.ok) {
+                    $.toast({
+                        heading: 'Success',
+                        text: `Saved configuration: ${config_name}`,
+                        showHideTransition: 'slide',
+                        icon: 'success'
+                    })
+                } else {
+                    throw new Error()
+                }
+            })
+            .catch(() => {
+                $.toast({
+                    heading: 'Error',
+                    text: `Failed to save ${config_name}`,
+                    showHideTransition: 'slide',
+                    icon: 'error'
+                })
+            })
+            .finally(() => {
+                //$(event.target).prop("disabled", false)
+            });
+
+    }
+</script>
+<div class="tab-pane fade p-3 show active" id="config-tab-pane" role="tabpanel" aria-labelledby="config-tab"
+    tabindex="0">
+    <div class="d-flex justify-content-center gap-2">
+        <input id="configNameInput" class="form-control" type="text" style="max-width: 100%; width: 300px"
+            placeholder="Configuration name" />
+        <button class="btn btn-primary" onclick="saveConfiguration($('#configNameInput').val())">Save Current
+            Configuration</button>
+    </div>
+    <hr />
+    <form class="pt-3">
+        {% for d in camera_config %}
+        {{ camera_config_body_content(d) }}
+        {% endfor %}
+        <hr />
+        {% for d in camera_config_secondary %}
+        {{ camera_config_body_content(d) }}
+        {% endfor %}
+    </form>
+</div>
+{%- endmacro %}

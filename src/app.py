@@ -1,14 +1,13 @@
 from quart_trio import QuartTrio
 from dotenv import load_dotenv
 import trio
-# from quart_session import Session
 import json
 import logging
 import sys
 import os
 from .web import web
-from .web.telescope.telescope_class import Telescope
-from web.camera.camera_class import get_available_usb_devices, create_gphoto2device, Gphoto2DeviceRole
+from web.dashboard.telescope.telescope_class import Telescope
+from web.dashboard.camera.camera_class import get_available_usb_devices, create_gphoto2device, Gphoto2DeviceRole
 
 try:
     with open(os.path.join('..', os.path.dirname(__file__), "logging.json"), "r") as f:
@@ -50,11 +49,8 @@ async def init():
     global PrimaryCam
     global availableCameras
     availableCameras = await get_available_usb_devices()
-    cameras = [{"model": c.model, "port": c.port} for c in availableCameras]
-    # print('Available Cameras')
-    # for i, c in enumerate(cameras):
-    #     print(f'{i+1}: {c.get("model")}')
-
+    # cameras = [{"model": c.model, "port": c.port} for c in availableCameras]
+    # TODO: Create front end to allow them to choose a camera
     PrimaryCam = await create_gphoto2device(
         camera=availableCameras[0],
         role=Gphoto2DeviceRole.PRIMARY

@@ -1,0 +1,78 @@
+{% macro camera_planning_body() -%}
+<script>
+    $(document).ready(() => {
+        sequences = window.astropi.sequences
+        if (sequences) {
+            sequences.forEach(s => {
+                $(`#sequenceList`).append(`
+                    <summary class="align-items-center justify-content-start p-3">
+                        <strong>${s.name}</strong>
+                        <span class="badge rounded-pill text-bg-info">${s.steps.length}</span>
+                        <span class="badge rounded-pill text-bg-dark">${s.category}</span>
+                        </span> ${s.description} <span class="badge bg-secondary">${s.start}</span>
+                    </summary>
+                    <hr/>
+                    ${s.steps.map((ss, ii) => `
+                        <table class="table table-sm table-borderless">
+                            <tbody>
+                                <tr>
+                                    <th scope="row" colspan="2" class="fs-4">
+                                        ⇨ Step ${ii + 1} 
+                                        ${ii == 0
+                        ? '<span class="badge rounded-pill text-bg-success">Completed</span>'
+                        : ii == 1
+                            ? '<span class="badge rounded-pill text-bg-warning">In progress</span>'
+                            : '<span class="badge rounded-pill text-bg-secondary">Not started</span>'
+                    }
+                                    </th>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Name</th>
+                                    <td colspan="3">${ss.name}</strong>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Note</th>
+                                    <td colspan="3">${ss.note}</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Frames</th>
+                                    <td>${ss.frames}</td>
+                                    <th scope="row">Interval</th>
+                                    <td>${ss.interval}</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Start</th>
+                                    <td colspan="3">${ss.start}</td>
+                                </tr>
+                                <tr class="pb-3">
+                                    <td><span class="badge bg-secondary fs-6">ISO800</span></td>
+                                    <td><span class="badge bg-secondary fs-6">1/1000</span></td>
+                                    <td><span class="badge bg-secondary fs-6">ƒ/5.6</span></td>
+                                    <td><span class="badge bg-secondary fs-6">+/- 1/3</span></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <hr/>
+                    `).join('')}
+                `)
+            })
+        }
+    })
+</script>
+<div class="tab-pane fade p-3" id="planning-tab-pane" role="tabpanel" aria-labelledby="planning-tab" tabindex="0">
+    <div class="row">
+        <div class="col-12 text-start">
+            <h4>Sequences</h4>
+        </div>
+        <div class="mb-3">
+            <details class="col-12 text-start table-responsive" id="sequenceList"></details>
+        </div>
+        <div class="col-12 text-start">
+        </div>
+        <div class="col-12 text-start">
+            <button class="btn btn-primary">Start</button>
+            <button class="btn btn-danger">Stop</button>
+        </div>
+    </div>
+</div>
+{%- endmacro %}

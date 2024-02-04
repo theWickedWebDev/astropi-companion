@@ -1,0 +1,14 @@
+{% extends "index.jinja" %}
+{% block index_content %}
+<div class="container-fluid text-center m-0 p-0">
+    <div class="row m-0 p-0">
+        <div class="col m-0 p-0">
+            {% include 'components/header.jinja' %}
+        </div>
+    </div>
+    <div class="container-fluid pt-2">
+        {% block dashboard_content %}
+        {% endblock %}
+    </div>
+</div>
+{% endblock %}

@@ -1,0 +1,57 @@
+{% extends "pages/dashboard/layout.jinja" %}
+{% block title %}Wifi Configuration{% endblock %}
+{% block head %}
+<script>
+    $(document).ready(() => {
+        $('body').attr('style', 'background: #000009')
+    })
+</script>
+{% endblock %}
+{% block dashboard_content %}
+<div class="form-wrap">
+    {% if complete %}
+    {% if success == True %}
+    <h1 class="p-3" style="color: #fff">Sucessfully connected to Wifi</h1>
+    <a style="color: #fff" href="{{url_for('web.dashboard.index')}}">Go to dashboard</a>
+    {% elif failed == True %}
+    <h1 class="p-3" style="color: #fff">Failed to connect to Wifi</h1>
+    <a style="color: #fff" href="{{url_for('web.wifi.index')}}">Try again</a>
+    {% endif %}
+    {% else %}
+    <div class="row d-flex justify-content-center">
+        <div class="col-6 p-3">
+            <form action="{{url_for('web.wifi.index')}}" method="post">
+                <div class="card" style="border: 0">
+                    <div class="card-img-top"
+                        style="display: block; height: 100px; width: 100%; background-size: cover; background-repeat: no-repeat; background-position: center; background-image: url('{{url_for('static', filename='img/andro.jpg')}}')">
+                    </div>
+                    <div class="card-body text  text-start">
+                        <div class="row gy-3">
+                            <div class="col-12">
+                                <h5 class="card-title">AstroPi Wifi Control</h5>
+                            </div>
+                            <div class="col-12">
+                                <label for="ssid" class="form-label">WiFi network:</label>
+                                <select name="ssid" id="ssid" value="{{active}}" class="form-select">
+                                    {% for option in options %}
+                                    <option {{'selected' if option.selected }} value="{{ option.value }}">{{
+                                        option.label }}
+                                    </option>
+                                    {% endfor %}
+                                </select>
+                            </div>
+                            <div class="col-12">
+                                <label for="password" class="form-label">Password:</label>
+                                <input type="password" name="password" class="form-control" id="password">
+                            </div>
+                            <div class="col-12">
+                                <input type="submit" value="Connect">
+                            </div>
+                        </div>
+                    </div>
+            </form>
+        </div>
+    </div>
+    {% endif %}
+</div>
+{% endblock %}

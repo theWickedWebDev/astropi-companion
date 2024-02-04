@@ -1,13 +1,16 @@
-import trio
 from quart import render_template, current_app
 import requests
-import re
 import os
 import json
 
 from ._blueprint import blueprint
 from ..sequence.sequence import get_sequences
-from ..camera.camera_class import get_available_usb_devices
+from .camera.camera_class import get_available_usb_devices
+from .camera import camera
+from .telescope import telescope
+
+blueprint.register_blueprint(camera, url_prefix="/camera")
+blueprint.register_blueprint(telescope, url_prefix="/telescope")
 
 
 def get_camera_config():
@@ -54,33 +57,42 @@ def read_telescope_file():
 
 
 async def render_dashboard(page):
-    # config = await get_camera_config()
     tele = read_telescope_file()
     weather = fetchWeather()
     sequences = get_sequences()
     _cameras = await get_available_usb_devices()
     cameras = [{"model": c.model, "port": c.port} for c in _cameras]
 
+    camera = current_app.config.get('camera')
+    primary, secondary, _ = camera.get_json_config()
+
+    camera_details = {
+        "name": camera.camera.model,
+        "lensname": camera.lensname
+    }
+
     return await render_template(
         page,
         telescope=tele,
         sequences=sequences,
         cameras=cameras,
-        camera={},  # config,
+        camera=camera_details,
+        camera_config=primary,
+        camera_config_secondary=sorted(secondary, key=lambda x: x['readonly']),
         weather=weather
     )
 
 
 @blueprint.route('/', methods=['GET'])
 async def index():
-    return await render_dashboard('pages/dashboard/dashboard.html')
+    return await render_dashboard('pages/dashboard/index.jinja')
 
 
 @blueprint.route('/camera', methods=['GET'])
 async def camera():
-    return await render_dashboard('pages/dashboard/camera.html')
+    return await render_dashboard('pages/dashboard/camera/index.jinja')
 
 
 @blueprint.route('/telescope', methods=['GET'])
 async def telescope():
-    return await render_dashboard('pages/dashboard/telescope.html')
+    return await render_dashboard('pages/dashboard/telescope/index.jinja')

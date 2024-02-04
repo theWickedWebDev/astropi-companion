@@ -1,5 +1,5 @@
 __pycache__/
 api/mock_photos/solves/
 data/
-*.log
+
 *.tmp
