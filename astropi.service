@@ -1,5 +1,5 @@
 [Unit]
-Description=AstroPi Wifi Manager App
+Description=Astropi Companion & WiFi
 After=network.target
 
 [Service]

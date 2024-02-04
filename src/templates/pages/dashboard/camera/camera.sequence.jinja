@@ -1,0 +1,56 @@
+{% macro camera_sequence_body() -%}
+<script>
+    $(document).ready(() => {
+        sequences = window.astropi.sequences
+        if (sequences) {
+            sequences.forEach((s, i) => {
+                $(`#sequenceList`).append(`
+                    <div class="d-flex justify-content-start align-items-center">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="sequencecheck${i}">
+                        <details class="col-12 text-start table-responsive" id="sequenceList">
+                            <summary class="align-items-center justify-content-start p-3">
+                                <strong>${s.name}</strong>
+                                <span class="badge rounded-pill text-bg-info">${s.steps.length}</span>
+                                <span class="badge rounded-pill text-bg-dark">${s.category}</span>
+                                </span> ${s.description} <span class="badge bg-secondary">${s.start}</span>
+                            </summary>
+                            <ol class="list-group" style="padding: 12px 36px">
+                            ${s.steps.map((ss, ii) => `
+                                <li class="list-group-item ml-3 p-3">
+                                    <span class="d-flex justify-content-between align-items-center">
+                                        <span><strong>${ss.start}</strong> - ${ss.name}</span>
+                                    ${ii == 0
+                        ? '<span class="badge rounded-pill text-bg-success">Completed</span>'
+                        : ii == 1
+                            ? '<span class="badge rounded-pill text-bg-warning">In progress</span>'
+                            : '<span class="badge rounded-pill text-bg-secondary">Not started</span>'
+                    }
+                                        </span>
+                                        <ul class="mt-2">
+                                            <li><strong>Frames:</strong> ${ss.frames}</li>
+                                            <li><strong>Interval:</strong> ${ss.interval}</li>
+                                            <li class="d-flex justify-content-between">${ss.note} <button class="btn-sm btn-outline-secondary btn">Camera Config</button></li>
+                                        </ul>
+                                </li>
+                            `).join('')
+                    }
+                            </ol>
+                        </details>
+                    </div>
+                `)
+            })
+        }
+    })
+</script>
+<div class="tab-pane fade p-3" id="sequence-tab-pane" role="tabpanel" aria-labelledby="sequence-tab" tabindex="0">
+    <div class="row">
+        <div class="mb-3" id="sequenceList"></div>
+        <div class="col-12 text-start">
+        </div>
+        <div class="col-12 text-start">
+            <button class="btn btn-primary">Start</button>
+            <button class="btn btn-danger">Stop</button>
+        </div>
+    </div>
+</div>
+{%- endmacro %}

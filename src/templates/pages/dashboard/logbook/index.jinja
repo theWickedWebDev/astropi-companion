@@ -1,0 +1,15 @@
+{% extends "pages/dashboard/layout.jinja" %}
+{% set active_page = "logbook" %}
+{% block head %}
+<script>
+    /*
+    {% if messier %} window.astropi.messier = JSON.parse('{{messier | tojson}}'){% endif %}
+    console.log(window.astropi.messier)
+    */
+</script>
+{% endblock %}
+{% block dashboard_content %}
+<div class="row align-items-start justify-content-start p-2 text-start">
+    <h3>Logbook</h3>
+</div>
+{% endblock %}

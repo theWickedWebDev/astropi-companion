@@ -1,0 +1,75 @@
+{
+    "version": 1,
+    "formatters": {
+        "simple": {
+            "format": "[%(levelname)s] %(asctime)s // %(name)s %(funcName)s\n    %(message)s"
+        }
+    },
+    "handlers": {
+        "stderr": {
+            "class": "logging.StreamHandler",
+            "level": "ERROR",
+            "formatter": "simple",
+            "stream": "ext://sys.stderr"
+        },
+        "stdout": {
+            "class": "logging.StreamHandler",
+            "level": "DEBUG",
+            "formatter": "simple",
+            "stream": "ext://sys.stdout"
+        },
+        "file": {
+            "class": "logging.FileHandler",
+            "formatter": "simple",
+            "filename": "astropi.log",
+            "mode": "w"
+        }
+    },
+    "loggers": {
+        "__main__": {
+            "level": "DEBUG",
+            "handlers": [
+                "stderr",
+                "stdout",
+                "file"
+            ],
+            "propagate": true
+        },
+        "src.web.telescope": {
+            "level": "DEBUG",
+            "handlers": [
+                "stderr",
+                "stdout",
+                "file"
+            ],
+            "propagate": true
+        },
+        "src.web.telescope.telescope_class": {
+            "level": "DEBUG",
+            "handlers": [
+                "stderr",
+                "stdout",
+                "file"
+            ],
+            "propagate": true
+        },
+        "src.web.util.platesolve.solve": {
+            "level": "DEBUG",
+            "handlers": [
+                "stderr",
+                "stdout",
+                "file"
+            ],
+            "propagate": true
+        },
+        "src.web.camera.camera": {
+            "level": "DEBUG",
+            "handlers": [
+                "stderr",
+                "stdout",
+                "file"
+            ],
+            "propagate": true
+        }
+    }
+}

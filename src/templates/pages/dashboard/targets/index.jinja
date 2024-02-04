@@ -1,0 +1,80 @@
+{% extends "pages/dashboard/layout.jinja" %}
+{% set active_page = "targets" %}
+{% block head %}
+<script>
+    $(document).ready(() => {
+        var gallery = $('.gallery a').simpleLightbox({});
+    })
+
+    {% if messier %} window.astropi.messier = JSON.parse('{{messier | tojson}}'){% endif %}
+    console.log(window.astropi.messier)
+    /*{
+    "constellation": {
+        "abbr": "Per",
+        "en": "Perseus (mythological character)",
+        "genitive": "Persei",
+        "name": "Perseus"
+    },
+    "dec": "+42d44m46.1s",
+    "discoverer": "Messier",
+    "distance": 1450,
+    "id": "74dd035b8e3f0939adc7fdf89ec6212ab6b185d2",
+    "image": "/images/messier/M034.jpg",
+    "magnitude": 5,
+    "messier": "M34",
+    "name": "Perseus",
+    "ngc": "1039",
+    "object": "Open Cluster",
+    "ra": "02h42m07.40s",
+    "season": "Autumn",
+    "visible": {
+        "deg": 85.5626100111111,
+        "label": "Sometimes Visible"
+    },
+    "year": "1764"
+}*/
+</script>
+{% endblock %}
+{% block dashboard_content %}
+<div class="row align-items-start justify-content-start p-2 text-start">
+    <div class="row row-cols-1 g-2 gallery">
+        {% for o in messier %}
+        <div class="card border-secondary card-rounded p-0">
+            <h5 class="card-header d-flex justify-content-between"><span><span
+                        class="badge text-bg-dark">{{o.messier}}</span> {{o.name}} - <small>{{o.object}}</small></span>
+                <span>
+                    <i class="bi bi-bookmark-check-fill text-success"></i>
+                </span>
+            </h5>
+            <div class="card-body">
+                <div class="row">
+                    <div class="col-2">
+                        <a href={{url_for("static", filename=o.image)}} class="big" rel="rel1">
+                            <img src={{url_for("static", filename=o.image)}} alt="{{o.name}}" title="{{o.name}}"
+                                style="width: 100% !important">
+                        </a>
+                    </div>
+                    <div class="col-10">
+                        <p class="card-text row gx-3">
+                            <span class="col-6">RA: <span class="badge text-bg-secondary">{{o.ra}}</span></span>
+                            <span class="col-6">Dec: <span class="badge text-bg-secondary">{{o.dec}}</span></span>
+                        </p>
+                        <p class="card-text row text-center">
+                            <small class="text-body-secondary col"><i class="bi bi-eye-fill"></i>
+                                {{o.visible.label}}</small>
+                            <small class="text-body-secondary col"><i class="bi bi-calendar"></i>
+                                {{o.season}}</small>
+                            <small class="text-body-secondary col"><i class="bi bi-lightbulb-fill"></i>
+                                Mag: {{o.magnitude}}</small>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="card-footer text-body-secondary text-end">
+                <a href="#" class="card-link">Slew telescope</a>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</div>
+{% endblock %}

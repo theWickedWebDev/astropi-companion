@@ -1,0 +1,46 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
+    <!-- JS -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <script src="{{ url_for('static', filename='js/toast.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/zoom.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/wheelzoom.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/image.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/simple-lightbox.jquery.min.js') }}"></script>
+    <script>
+        window.astropi = {}
+        window.astropi.settings = {}
+        window.astropi.plate_solve = {}
+        {% if camera %} window.astropi.camera = JSON.parse('{{camera | tojson}}'){% endif %}
+        {% if cameras %} window.astropi.cameras = JSON.parse('{{cameras | tojson}}'){% endif %}
+        {% if weather %} window.astropi.weather = JSON.parse('{{weather | tojson}}'){% endif %}
+        {% if telescope %} window.astropi.telescope = JSON.parse('{{telescope | tojson}}'){% endif %}
+        {% if sequences %} window.astropi.sequences = JSON.parse('{{sequences | tojson}}'){% endif %}
+        {% if camera_config %} window.astropi.camera_config = JSON.parse('{{camera_config | tojson}}'){% endif %}
+        {% if camera_config_secondary %} window.astropi.camera_config_secondary = JSON.parse('{{camera_config_secondary | tojson}}'){% endif %}
+        Object.entries(window.astropi).forEach(([k, v]) => console.log(k.toUpperCase(), v))
+    </script>
+    {% block head %}
+    <title>{% block title %}{% endblock %} - AstroPi</title>
+    {% endblock %}
+</head>
+
+<body>
+    {% block index_content %}{% endblock %}
+</body>
+
+</html>

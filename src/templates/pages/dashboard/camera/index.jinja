@@ -1,0 +1,93 @@
+{% set active_page = "camera" %}
+<!--  -->
+{% from "pages/dashboard/camera/camera.preview.jinja" import camera_preview_body with context %}
+{% from "pages/dashboard/camera/camera.capture.jinja" import camera_capture_body with context %}
+{% from "pages/dashboard/camera/camera.config.jinja" import camera_config_body with context %}
+{% from "pages/dashboard/camera/camera.sequence.jinja" import camera_sequence_body with context %}
+
+<!-- Navigation Tab Macro -->
+{% macro camera_tabs(name="tab", active=false) -%}
+<li class="nav-item" role="presentation">
+    <button class="nav-link {% if active %}active{% endif %}" id="{{name}}-tab" data-bs-toggle="tab"
+        data-bs-target="#{{name}}-tab-pane" type="button" role="tab" aria-controls="{{name}}-tab-pane"
+        aria-selected="{% if active %}true{% else %}false{% endif %}">
+        {{ name[0]|upper}}{{name[1:] }}
+    </button>
+</li>
+{%- endmacro %}
+
+{% extends "pages/dashboard/layout.jinja" %}
+{% block head %}
+<script>
+    $(document).ready(function () {
+        window.astropi.settings.onchange = function (event, isCustomConfig) {
+            $(event.target).prop("disabled", true)
+            const config_name = $(event.target).attr('data-configid')
+            let config_value = event.target.value
+            let by_value = $(event.target).attr('data-byvalue')
+
+            // Change checkbox values to is checked
+            if ($(event.target).prop('tagName') == 'INPUT' && $(event.target).prop('type') == 'checkbox') {
+                config_value = $(event.target).is(':checked') ? '1' : '0'
+            }
+            let custom_value = isCustomConfig == 'True' ? true : false
+
+            url = "{{url_for('web.dashboard.camera.change_camera_setting', setting='11', index='22', by_value='33', custom='44')}}"
+                .replace('11', encodeURIComponent(config_name))
+                .replace('22', encodeURIComponent(config_value))
+                .replace('33', encodeURIComponent(by_value))
+                .replace('44', encodeURIComponent(custom_value ? true : false))
+
+            console.log(url)
+
+            fetch(url, { method: "POST" })
+                .then(async (response) => {
+                    if (response.ok) {
+                        if (config_name == '/main/capturesettings/shutterspeed' && config_value != 0) {
+                            $('select#exposure').hide()
+                            $('label#label_exposure').hide()
+                        }
+
+                        $.toast({
+                            heading: 'Success',
+                            text: `Updated ${config_name}`,
+                            showHideTransition: 'slide',
+                            icon: 'success'
+                        })
+
+                    } else {
+                        throw new Error()
+                    }
+                })
+                .catch(() => {
+                    $.toast({
+                        heading: 'Error',
+                        text: `Failed to update ${config_name}`,
+                        showHideTransition: 'slide',
+                        icon: 'error'
+                    })
+                })
+                .finally(() => {
+                    $(event.target).prop("disabled", false)
+                });
+        }
+    })
+</script>
+{% endblock %}
+
+{% block dashboard_content %}
+<h3 id="cameraName" class="m-3 mb-0">{{ camera.name }}</h3>
+<h6>{{camera.lensname}}</h6>
+<ul class="nav nav-tabs mt-3" id="myTab" role="tablist">
+    {{ camera_tabs(name="preview") }}
+    {{ camera_tabs(name="capture") }}
+    {{ camera_tabs(name="config", active=true ) }}
+    {{ camera_tabs(name="sequence")}}
+</ul>
+<div class="tab-content" id="myTabContent">
+    {{ camera_preview_body() }}
+    {{ camera_capture_body() }}
+    {{ camera_config_body() }}
+    {{ camera_sequence_body() }}
+</div>
+{% endblock %}

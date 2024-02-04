@@ -1,0 +1,92 @@
+{% macro camera_capture_body() -%}
+<script>
+    function captureInterval() {
+        const interval = $('#interval_input').val()
+        const frames = $('#frames_input').val()
+        const name = $('#name_input').val()
+        const exposure = $('#exposure_input').val()
+        const url = "{{ url_for('web.dashboard.capture.start_intervalometer', interval = "11", frames = "22", name = "33", exposure = "44")}}".replace('11', interval).replace('22', frames).replace('33', name).replace('44', exposure)
+
+        fetch(url, { method: "POST" })
+            .then(async (response) => {
+                if (response.ok) {
+                    $.toast({
+                        heading: 'Success',
+                        text: `Capturing...`,
+                        showHideTransition: 'slide',
+                        icon: 'success'
+                    })
+                } else {
+                    throw new Error()
+                }
+            })
+            .catch(() => {
+                $.toast({
+                    heading: 'Error',
+                    text: `Failed to capture`,
+                    showHideTransition: 'slide',
+                    icon: 'error'
+                })
+            })
+            .finally(() => {
+                //$(event.target).prop("disabled", false)
+            });
+
+    }
+    $(document).ready(() => {
+    })
+</script>
+<div class="tab-pane fade p-3" id="capture-tab-pane" role="tabpanel" aria-labelledby="capture-tab" tabindex="0">
+    <div class="row d-flex">
+        <div class="col-12 text-start">
+            <h4>Simple</h4>
+        </div>
+
+        <div class="col-12 text-start">
+            <div class="d-flex">
+                <div class="p-2">
+                    <div class="form-check form-switch p-0">
+                        <label for="name_input" class="form-label">Name</label>
+                        <input type="text" class="form-control" id="name_input">
+                    </div>
+                </div>
+                <div class="p-2 flex-fill">
+                    <div class="form-check form-switch p-0">
+                        <label for="exposure_input" class="form-label">Exposure</label>
+                        <input type="number" min="3" max="600" class="form-control" id="exposure_input">
+                    </div>
+                </div>
+                <div class="p-2 flex-fill">
+                    <div class="form-check form-switch p-0">
+                        <label for="frames_input" class="form-label">Frames</label>
+                        <input type="number" min="3" max="600" class="form-control" id="frames_input">
+                    </div>
+                </div>
+                <div class="p-2 flex-fill">
+                    <div class="form-check form-switch p-0">
+                        <label for="interval_input" class="form-label">Interval</label>
+                        <input type="number" min="3" max="600" class="form-control" id="interval_input">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 text-start">
+            <div class="d-flex">
+                <div class="p-2 flex-fill">
+                    <div class="form-check form-switch">
+                        <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckChecked"
+                            checked>
+                        <label class="form-check-label" for="flexSwitchCheckChecked">Use current camera
+                            config</label>
+                    </div>
+                </div>
+                <div class="p-2 flex-fill">
+                    <div class="form-check form-switch">
+                        <button class="btn btn-primary" onclick="captureInterval()">Create</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{%- endmacro %}

@@ -1,0 +1,2745 @@
+[
+    {
+        "id": "74dd035b8e3f0939adc7fdf89ec6212ab6b185d2",
+        "name": "Perseus",
+        "object": "Open Cluster",
+        "constellation": {
+            "abbr": "Per",
+            "name": "Perseus",
+            "genitive": "Persei",
+            "en": "Perseus (mythological character)"
+        },
+        "magnitude": 5,
+        "discoverer": "Messier",
+        "distance": 1450,
+        "image": "/images/messier/M034.jpg",
+        "messier": "M34",
+        "ngc": "1039",
+        "season": "Autumn",
+        "year": "1764",
+        "ra": "02h42m07.40s",
+        "dec": "+42d44m46.1s",
+        "visible": {
+            "label": "Sometimes Visible",
+            "deg": 85.5626100111111
+        }
+    },
+    {
+        "id": "b58c3798522520b494e3b482bce8e01b9a6031bb",
+        "name": "Lyre",
+        "object": "Globular Cluster",
+        "constellation": {
+            "abbr": "Lyr",
+            "name": "Lyra",
+            "genitive": "Lyrae",
+            "en": "lyre / harp"
+        },
+        "magnitude": 8,
+        "discoverer": "Messier",
+        "distance": 45600,
+        "image": "/images/messier/M056.jpg",
+        "messier": "M56",
+        "ngc": "6779",
+        "season": "Summer",
+        "year": "1779",
+        "ra": "19h16m35.51s",
+        "dec": "+30d11m04.2s",
+        "visible": {
+            "label": "Sometimes Visible",
+            "deg": 73.00094334444444
+        }
+    },
+    {
+        "id": "9588bfcb157762a61ec87d7bfe9819cef8502938",
+        "name": "Big Bear",
+        "object": "Galaxy",
+        "constellation": {
+            "abbr": "UMa",
+            "name": "Ursa Major",
+            "genitive": "Ursae Majoris",
+            "en": "great bear"
+        },
+        "magnitude": 9,
+        "discoverer": "Méchain",
+        "distance": 27000000,
+        "image": "/images/messier/M109.jpg",
+        "messier": "M109",
+        "ngc": "3992",
+        "season": "Autumn",
+        "year": "1782",
+        "ra": "11h57m35.98s",
+        "dec": "+53d22m28.3s",
+        "visible": {
+            "label": "Always Visible",
+            "deg": 96.19094334444443
+        }
+    },
+    {
+        "id": "4d5d402e83ef5f53ca8df305b781724e7898350c",
+        "name": "Andromeda",
+        "object": "Galaxy",
+        "constellation": {
+            "abbr": "And",
+            "name": "Andromeda",
+            "genitive": "Andromedae",
+            "en": "Andromeda (mythological character)"
+        },
+        "magnitude": 8,
+        "discoverer": "Messier",
+        "distance": 2250000,
+        "image": "/images/messier/M110.jpg",
+        "messier": "M110",
+        "ngc": "205",
+        "season": "Autumn",
+        "year": "1773",
+        "ra": "00h40m22.08s",
+        "dec": "+41d41m07.1s",
+        "visible": {
+            "label": "Sometimes Visible",
+            "deg": 84.50177667777777
+        }
+    },
+    {
+        "id": "175a62ddc515be7ad77106908aba59e8caf5aa03",
+        "name": "Serpent Holder",
+        "object": "Globular Cluster",
+        "constellation": {
+            "abbr": "Oph",
+            "name": "Ophiuchus",
+            "genitive": "Ophiuchi",
+            "en": "serpent-bearer"
+        },
+        "magnitude": 7,
+        "discoverer": "Messier",
+        "distance": 25800,
+        "image": "/images/messier/M009.jpg",
+        "messier": "M9",
+        "ngc": "6333",
+        "season": "Summer",
+        "year": "1764",
+        "ra": "17h19m11.78s",
+        "dec": "-18d30m58.5s",
+        "visible": {
+            "label": "Sometimes Visible",
+            "deg": 61.332610011111115
+        }
+    },
+    {
+        "id": "474a5c477d3fb4561ce50db7a500b658d4276ab5",
+        "name": "Bull",
+        "object": "Supernova remnant / Reste de Supernova",
+        "constellation": {
+            "abbr": "Tau",
+            "name": "Taurus",
+            "genitive": "Tauri",
+            "en": "bull"
+        },
+        "magnitude": 8,
+        "discoverer": "Bévis",
+        "distance": 6500,
+        "image": "/images/messier/M001.jpg",
+        "messier": "M1",
+        "ngc": "1952",
+        "season": "Winter",
+        "year": "1731",
+        "ra": "05h34m31.97s",
+        "dec": "+22d00m52.1s",
+        "visible": {
+            "label": "Sometimes Visible",
+            "deg": 64.83094334444445
+        }
+    },
+    {
+        "id": "cd02f3ce6e628f66bea762a6897242cd1cea582c",
+        "name": "Archer",
+        "object": "Globular Cluster",
+        "constellation": {
+            "abbr": "Sgr",
+            "name": "Sagittarius",
+            "genitive": "Sagittarii",
+            "en": "archer"
+        },
+        "magnitude": 5,
+        "discoverer": "Ihle",
+        "distance": 7800,
+        "image": "/images/messier/M022.jpg",
+        "messier": "M22",
+        "ngc": "6656",
+        "season": "Summer",
+        "year": "1665",
+        "ra": "18h36m24.20s",
+        "dec": "-23d54m12.3s",
+        "visible": {
+            "label": "Sometimes Visible",
+            "deg": 66.71983223333334
+        }
+    },
+    {
+        "id": "4e3de8cdf703e90ffff2bb163d435c95638fdc31",
+        "name": "Goat",
+        "object": "Globular Cluster",
+        "constellation": {
+            "abbr": "Cap",
+            "name": "Capricornus",
+            "genitive": "Capricorni",
+            "en": "sea goat"
+        },
+        "magnitude": 7,
+        "discoverer": "Messier",
+        "distance": 41000,
+        "image": "/images/messier/M030.jpg",
+        "messier": "M30",
+        "ngc": "7099",
+        "season": "Autumn",
+        "year": "1764",
+        "ra": "21h40m22.02s",
+        "dec": "-23d10m44.7s",
+        "visible": {
+            "label": "Sometimes Visible",
+            "deg": 65.99538778888889
+        }
+    },
+    {
+        "id": "12b793e3c681416a14a75b9d898109a3bb033bcf",
+        "name": "Serpent Holder",
+        "object": "Globular Cluster",
+        "constellation": {
+            "abbr": "Oph",
+            "name": "Ophiuchus",
+            "genitive": "Ophiuchi",
+            "en": "serpent-bearer"
+        },
+        "magnitude": 6,
+        "discoverer": "Messier",
+        "distance": 18900,
+        "image": "/images/messier/M012.jpg",
+        "messier": "M12",
+        "ngc": "6218",
+        "season": "Summer",
+        "year": "1764",
+        "ra": "16h47m14.52s",
+        "dec": "-01d56m52.2s",
+        "visible": {
+            "label": "Sometimes Visible",
+            "deg": 44.76427667777778
+        }
+    },
+    {
+        "id": "58873094dea8a324acb3e883dbea07f3489b7dcd",
+        "name": "Hercules",
+        "object": "Globular Cluster",
+        "constellation": {
+            "abbr": "Her",
+            "name": "Hercules",
+            "genitive": "Herculis",
+            "en": "Hercules (mythological character)"
+        },
+        "magnitude": 5,
+        "discoverer": "Halley",
+        "distance": 23500,
+        "image": "/images/messier/M013.jpg",
+        "messier": "M13",
+        "ngc": "6205",
+        "season": "Summer",
+        "year": "1714",
+        "ra": "16h41m41.63s",
+        "dec": "+36d27m40.7s",
+        "visible": {
+            "label": "Sometimes Visible",
+            "deg": 79.27761001111111
+        }
+    },
+    {
+        "id": "8dbc0bc4381a046881153ff7e57d8ec595d4fcb2",
+        "name": "Serpent Holder",
+        "object": "Globular Cluster",
+        "constellation": {
+            "abbr": "Oph",
+            "name": "Ophiuchus",
+            "genitive": "Ophiuchi",
+            "en": "serpent-bearer"
+        },
+        "magnitude": 7,
+        "discoverer": "Messier",
+        "distance": 22500,
+        "image": "/images/messier/M019.jpg",
+        "messier": "M19",
+        "ngc": "6273",
+        "season": "Summer",
+        "year": "1764",
+        "ra": "17h02m37.68s",
+        "dec": "-26d16m04.6s",
+        "visible": {
+            "label": "Sometimes Visible",
+            "deg": 69.08427667777778
+        }
+    },
+    {
+        "id": "e89adad0ccd1776cff70ebdef7513c472d3f555f",
+        "name": "Shield",
+        "object": "Open Cluster",
+        "constellation": {
+            "abbr": "Sct",
+            "name": "Scutum",
+            "genitive": "Scuti",
+            "en": "shield (of Sobieski)"
+        },
+        "magnitude": 8,
+        "discoverer": "Le Gentil",
+        "distance": 5100,
+        "image": "/images/messier/M026.jpg",
+        "messier": "M26",
+        "ngc": "6694",
+        "season": "Summer",
+        "year": "1749",
+        "ra": "18h45m18.66s",
+        "dec": "-09d23m01.0s",
+        "visible": {
+            "label": "Sometimes Visible",
+            "deg": 52.20011001111111
+        }
+    },
+    {
+        "id": "0dcdd3c78b8558ce153231f09e86a53389222480",
+        "name": "Andromeda",
+        "object": "Galaxy",
+        "constellation": {
+            "abbr": "And",
+            "name": "Andromeda",
+            "genitive": "Andromedae",
+            "en": "Andromeda (mythological character)"
+        },
+        "magnitude": 8,
+        "discoverer": "Le Gentil",
+        "distance": 2489000,
+        "image": "/images/messier/M032.jpg",
+        "messier": "M32",
+        "ngc": "221",
+        "season": "Autumn",
+        "year": "1749",
+        "ra": "00h42m41.83s",
+        "dec": "+40d51m55.0s",
+        "visible": {
+            "label": "Sometimes Visible",
+            "deg": 83.68177667777778
+        }
+    },
+    {
+        "id": "30b961fe2cc39b412fcf46952b12677f3457200a",
+        "name": "Charioteer",
+        "object": "Open Cluster",
+        "constellation": {
+            "abbr": "Aur",
+            "name": "Auriga",
+            "genitive": "Aurigae",
+            "en": "charioteer"
+        },
+        "magnitude": 6,
+        "discoverer": "Hodierna",
+        "distance": 2750,
+        "image": "/images/messier/M038.jpg",
+        "messier": "M38",
+        "ngc": "1912",
+        "season": "Winter",
+        "year": "1654",
+        "ra": "05h28m42.49s",
+        "dec": "+35d51m17.7s",
+        "visible": {
+            "label": "Sometimes Visible",
+            "deg": 78.67122112222222
+        }
+    },
+    {
+        "id": "4ec02d3de216100fcc434a46dfc7c2d8e429f8c1",
+        "name": "Orion, Hunter",
+        "object": "Emission Nebula / Nébuleuse à émission",
+        "constellation": {
+            "abbr": "Ori",
+            "name": "Orion",
+            "genitive": "Orionis",
+            "en": "Orion (mythological character)"
+        },
+        "magnitude": 4,
+        "discoverer": "Peiresc",
+        "distance": 1500,
+        "image": "/images/messier/M042.jpg",
+        "messier": "M42",
+        "ngc": "9176",
+        "season": "Winter",
+        "year": "1610",
+        "ra": "05h35m16.48s",
+        "dec": "-05d23m22.8s",
+        "visible": {
+            "label": "Sometimes Visible",
+            "deg": 48.20594334444444
+        }
+    },
+    {
+        "id": "eaff5833bfb82f43a48e65c97151d0d3eb170790",
+        "name": "Orion, Hunter",
+        "object": "Reflection Nebula / Nébuleuse à réflexion",
+        "constellation": {
+            "abbr": "Ori",
+            "name": "Orion",
+            "genitive": "Orionis",
+            "en": "Orion (mythological character)"
+        },
+        "magnitude": 9,
+        "discoverer": "Mairan",
+        "distance": 1500,
+        "image": "/images/messier/M043.jpg",
+        "messier": "M43",
+        "ngc": "1982",
+        "season": "Winter",
+        "year": "1750",
+        "ra": "05h35m31.38s",
+        "dec": "-05d16m02.9s",
+        "visible": {
+            "label": "Sometimes Visible",
+            "deg": 48.08372112222222
+        }
+    },
+    {
+        "id": "4ac0891fc54ea74d4b8f122556931c5820c00478",
+        "name": "Pleiades",
+        "object": "Open Cluster",
+        "constellation": {
+            "abbr": "Tau",
+            "name": "Taurus",
+            "genitive": "Tauri",
+            "en": "bull"
+        },
+        "magnitude": 1.6,
+        "distance": 410,
+        "image": "/images/messier/M045.jpg",
+        "messier": "M45",
+        "ngc": "1432",
+        "season": "Winter",
+        "ra": "03h47m24s",
+        "dec": "-24d07m00s",
+        "visible": {
+            "label": "Sometimes Visible",
+            "deg": 66.93316556666667
+        }
+    },
+    {
+        "id": "28b51b1bde9ad3b74a9d733c6d821b86d2d78596",
+        "name": "Cassiopeia",
+        "object": "Open Cluster",
+        "constellation": {
+            "abbr": "Cas",
+            "name": "Cassiopeia",
+            "genitive": "Cassiopeiae",
+            "en": "Cassiopeia (mythological character)"
+        },
+        "magnitude": 6,
+        "discoverer": "Messier",
+        "distance": 3000,
+        "image": "/images/messier/M052.jpg",
+        "messier": "M52",
+        "ngc": "7654",
+        "season": "Autumn",
+        "year": "1774",
+        "ra": "23h24m48.40s",
+        "dec": "+61d35m35.4s",
+        "visible": {
+            "label": "Always Visible",
+            "deg": 104.40955445555556
+        }
+    },
+    {
+        "id": "de85fd4bf4ba6c585ce7a526753e51dade84c6c2",
+        "name": "Hair of Berenice",
+        "object": "Globular Cluster",
+        "constellation": {
+            "abbr": "Com",
+            "name": "Coma Berenices",
+            "genitive": "Comae Berenices",
+            "en": "Berenice's hair"
+        },
+        "magnitude": 7,
+        "discoverer": "Bode",
+        "distance": 69000,
+        "image": "/images/messier/M053.jpg",
+        "messier": "M53",
+        "ngc": "5024",
+        "season": "Spring",
+        "year": "1775",
+        "ra": "13h12m55.23s",
+        "dec": "+18d10m08.8s",
+        "visible": {
+            "label": "Sometimes Visible",
+            "deg": 60.985387788888886
+        }
+    },
+    {
+        "id": "29d04f1e87ccf3c9e5a843b7da6edbefb3af1e71",
+        "name": "Archer",
+        "object": "Globular Cluster",
+        "constellation": {
+            "abbr": "Sgr",
+            "name": "Sagittarius",
+            "genitive": "Sagittarii",
+            "en": "archer"
+        },
+        "magnitude": 7,
+        "discoverer": "Lacaille",
+        "distance": 20000,
+        "image": "/images/messier/M055.jpg",
+        "messier": "M55",
+        "ngc": "6809",
+        "season": "Summer",
+        "year": "1751",
+        "ra": "19h39m59.40s",
+        "dec": "-30d57m43.5s",
+        "visible": {
+            "label": "Sometimes Visible",
+            "deg": 73.77844334444444
+        }
+    },
+    {
+        "id": "72ceba7f9ed12c0c02180c086e4b98af5c869b90",
+        "name": "Virgin",
+        "object": "Galaxy",
+        "constellation": {
+            "abbr": "Vir",
+            "name": "Virgo",
+            "genitive": "Virginis",
+            "en": "virgin or maiden"
+        },
+        "magnitude": 9,
+        "discoverer": "Messier",
+        "distance": 41000000,
+        "image": "/images/messier/M058.jpg",
+        "messier": "M58",
+        "ngc": "4579",
+        "season": "Spring",
+        "year": "1779",
+        "ra": "12h37m43.52s",
+        "dec": "+11d49m05.5s",
+        "visible": {
+            "label": "Sometimes Visible",
+            "deg": 54.63455445555555
+        }
+    },
+    {
+        "id": "f9ca8dcf4e7d122f9831f178eafa8d70ef91572f",
+        "name": "Virgin",
+        "object": "Galaxy",
+        "constellation": {
+            "abbr": "Vir",
+            "name": "Virgo",
+            "genitive": "Virginis",
+            "en": "virgin or maiden"
+        },
+        "magnitude": 8,
+        "discoverer": "Koehler",
+        "distance": 41000000,
+        "image": "/images/messier/M060.jpg",
+        "messier": "M60",
+        "ngc": "4649",
+        "season": "Spring",
+        "year": "1779",
+        "ra": "12h43m39.98s",
+        "dec": "+11d33m09.7s",
+        "visible": {
+            "label": "Sometimes Visible",
+            "deg": 54.3689989
+        }
+    },
+    {
+        "id": "89670f7e191f09c2c610a8ca53fd6a6e673d8cf0",
+        "name": "Hydra, Sea Snake",
+        "object": "Globular Cluster",
+        "constellation": {
+            "abbr": "Hya",
+            "name": "Hydra",
+            "genitive": "Hydrae",
+            "en": "Hydra (mythological creature)"
+        },
+        "magnitude": 8,
+        "discoverer": "Méchain",
+        "distance": 36000,
+        "image": "/images/messier/M068.jpg",
+        "messier": "M68",
+        "ngc": "4590",
+        "season": "Spring",
+        "year": "1780",
+        "ra": "12h39m28.01s",
+        "dec": "-26d44m34.9s",
+        "visible": {
+            "label": "Sometimes Visible",
+            "deg": 69.55927667777777
+        }
+    },
+    {
+        "id": "d47a40e343ae0021eaefc8140b31de7646260e33",
+        "name": "Hydra, Sea Snake",
+        "object": "Galaxy",
+        "constellation": {
+            "abbr": "Hya",
+            "name": "Hydra",
+            "genitive": "Hydrae",
+            "en": "Hydra (mythological creature)"
+        },
+        "magnitude": 7,
+        "discoverer": "Lacaille",
+        "distance": 8500000,
+        "image": "/images/messier/M083.jpg",
+        "messier": "M83",
+        "ngc": "5236",
+        "season": "Spring",
+        "year": "1751",
+        "ra": "13h37m00.95s",
+        "dec": "-29d51m55.5s",
+        "visible": {
+            "label": "Sometimes Visible",
+            "deg": 72.68177667777778
+        }
+    },
+    {
+        "id": "0e3e6ef88b90fda5d93874323da9cc4a30af3648",
+        "name": "Virgin",
+        "object": "Galaxy",
+        "constellation": {
+            "abbr": "Vir",
+            "name": "Virgo",
+            "genitive": "Virginis",
+            "en": "virgin or maiden"
+        },
+        "magnitude": 9,
+        "discoverer": "Messier",
+        "distance": 20000000,
+        "image": "/images/messier/M086.jpg",
+        "messier": "M86",
+        "ngc": "4406",
+        "season": "Spring",
+        "year": "1781",
+        "ra": "12h26m11.74s",
+        "dec": "+12d56m46.4s",
+        "visible": {
+            "label": "Sometimes Visible",
+            "deg": 55.76261001111111
+        }
+    },
+    {
+        "id": "4d0bdba81ca8120092e5cfd5e5c58bf22347c51f",
+        "name": "Stern,Poop deck",
+        "object": "Open Cluster",
+        "constellation": {
+            "abbr": "Pup",
+            "name": "Puppis",
+            "genitive": "Puppis",
+            "en": "poop deck"
+        },
+        "magnitude": 4,
+        "discoverer": "Hodierna",
+        "distance": 1750,
+        "image": "/images/messier/M047.jpg",
+        "messier": "M47",
+        "ngc": "2422",
+        "season": "Winter",
+        "year": "1654",
+        "ra": "07h36m35.02s",
+        "dec": "-14d28m57.4s",
+        "visible": {
+            "label": "Sometimes Visible",
+            "deg": 57.2989989
+        }
+    },
+    {
+        "id": "38f137fc167903f4ac3024776d0e91a7bab5e3bf",
+        "name": "Lion",
+        "object": "Galaxy",
+        "constellation": {
+            "abbr": "Leo",
+            "name": "Leo",
+            "genitive": "Leonis",
+            "en": "lion"
+        },
+        "magnitude": 9,
+        "discoverer": "Méchain",
+        "distance": 29000000,
+        "image": "/images/messier/M065.jpg",
+        "messier": "M65",
+        "ngc": "3623",
+        "season": "Spring",
+        "year": "1780",
+        "ra": "11h18m55.92s",
+        "dec": "+13d05m32.5s",
+        "visible": {
+            "label": "Sometimes Visible",
+            "deg": 55.90872112222222
+        }
+    },
+    {
+        "id": "f987515dadff6877b63134e571d146a85847cbaa",
+        "name": "Hare",
+        "object": "Globular Cluster",
+        "constellation": {
+            "abbr": "Lep",
+            "name": "Lepus",
+            "genitive": "Leporis",
+            "en": "hare"
+        },
+        "magnitude": 8,
+        "discoverer": "Méchain",
+        "distance": 43400,
+        "image": "/images/messier/M079.jpg",
+        "messier": "M79",
+        "ngc": "1904",
+        "season": "Winter",
+        "year": "1780",
+        "ra": "05h24m10.59s",
+        "dec": "-24d31m27.2s",
+        "visible": {
+            "label": "Sometimes Visible",
+            "deg": 67.34066556666667
+        }
+    },
+    {
+        "id": "cbdfffff3c6570c796121bc90dd6976c75b98462",
+        "name": "Virgin",
+        "object": "Galaxy",
+        "constellation": {
+            "abbr": "Vir",
+            "name": "Virgo",
+            "genitive": "Virginis",
+            "en": "virgin or maiden"
+        },
+        "magnitude": 9,
+        "discoverer": "Messier",
+        "distance": 41000000,
+        "image": "/images/messier/M084.jpg",
+        "messier": "M84",
+        "ngc": "4374",
+        "season": "Spring",
+        "year": "1781",
+        "ra": "12h25m03.74s",
+        "dec": "+12d53m13.1s",
+        "visible": {
+            "label": "Sometimes Visible",
+            "deg": 55.703443344444445
+        }
+    },
+    {
+        "id": "5fbe44fdf5659dc5f3b6616879ae2827fa785c74",
+        "name": "Archer",
+        "object": "Emission Nebula / Nébuleuse à émission",
+        "constellation": {
+            "abbr": "Sgr",
+            "name": "Sagittarius",
+            "genitive": "Sagittarii",
+            "en": "archer"
+        },
+        "magnitude": 6,
+        "discoverer": "Le Gentil",
+        "distance": 2300,
+        "image": "/images/messier/M020.jpg",
+        "messier": "M20",
+        "ngc": "6514",
+        "season": "Summer",
+        "year": "1749",
+        "ra": "18h02m42.11s",
+        "dec": "-22d58m18.8s",
+        "visible": {
+            "label": "Sometimes Visible",
+            "deg": 65.78816556666666
+        }
+    },
+    {
+        "id": "049bf2f3452e44ff4549ef97559eaabe4235fb7c",
+        "name": "Serpent Holder",
+        "object": "Globular Cluster",
+        "constellation": {
+            "abbr": "Oph",
+            "name": "Ophiuchus",
+            "genitive": "Ophiuchi",
+            "en": "serpent-bearer"
+        },
+        "magnitude": 6,
+        "discoverer": "Messier",
+        "distance": 16300,
+        "image": "/images/messier/M010.jpg",
+        "messier": "M10",
+        "ngc": "6254",
+        "season": "Summer",
+        "year": "1764",
+        "ra": "16h57m08.99s",
+        "dec": "-04d05m57.6s",
+        "visible": {
+            "label": "Sometimes Visible",
+            "deg": 46.91566556666667
+        }
+    },
+    {
+        "id": "6cc91740187da27131e8922a12a50aa44add9f8c",
+        "name": "Serpent Holder",
+        "object": "Globular Cluster",
+        "constellation": {
+            "abbr": "Oph",
+            "name": "Ophiuchus",
+            "genitive": "Ophiuchi",
+            "en": "serpent-bearer"
+        },
+        "magnitude": 7,
+        "discoverer": "Messier",
+        "distance": 24000,
+        "image": "/images/messier/M014.jpg",
+        "messier": "M14",
+        "ngc": "6402",
+        "season": "Summer",
+        "year": "1764",
+        "ra": "17h37m36.16s",
+        "dec": "-03d14m45.3s",
+        "visible": {
+            "label": "Sometimes Visible",
+            "deg": 46.062332233333336
+        }
+    },
+    {
+        "id": "8216d7c80e624c25037eddfd57b5d49963bc2f4b",
+        "name": "Archer",
+        "object": "Open Cluster",
+        "constellation": {
+            "abbr": "Sgr",
+            "name": "Sagittarius",
+            "genitive": "Sagittarii",
+            "en": "archer"
+        },
+        "magnitude": 11,
+        "discoverer": "Messier",
+        "distance": 16000,
+        "image": "/images/messier/M024.jpg",
+        "messier": "M24",
+        "ngc": "6603",
+        "season": "Summer",
+        "year": "1764",
+        "ra": "18h16m56.12s",
+        "dec": "-18d30m52.4s",
+        "visible": {
+            "label": "Sometimes Visible",
+            "deg": 61.33094334444444
+        }
+    },
+    {
+        "id": "70029ae1ed26cdddc0b042eb424b24eb69b353ce",
+        "name": "Triangle",
+        "object": "Galaxy",
+        "constellation": {
+            "abbr": "Tri",
+            "name": "Triangulum",
+            "genitive": "Trianguli",
+            "en": "triangle"
+        },
+        "magnitude": 5,
+        "discoverer": "Messier",
+        "distance": 2723000,
+        "image": "/images/messier/M033.jpg",
+        "messier": "M33",
+        "ngc": "598",
+        "season": "Autumn",
+        "year": "1764",
+        "ra": "01h33m50.89s",
+        "dec": "+30d39m36.8s",
+        "visible": {
+            "label": "Sometimes Visible",
+            "deg": 73.4764989
+        }
+    },
+    {
+        "id": "7e4c1cf3b2a46e7fcf200836458e22dea835a247",
+        "name": "Hair of Berenice",
+        "object": "Galaxy",
+        "constellation": {
+            "abbr": "Com",
+            "name": "Coma Berenices",
+            "genitive": "Comae Berenices",
+            "en": "Berenice's hair"
+        },
+        "magnitude": 10,
+        "discoverer": "Messier",
+        "distance": 37000000,
+        "image": "/images/messier/M091.jpg",
+        "messier": "M91",
+        "ngc": "4548",
+        "season": "Spring",
+        "year": "1781",
+        "ra": "12h35m26.45s",
+        "dec": "+14d29m46.8s",
+        "visible": {
+            "label": "Sometimes Visible",
+            "deg": 57.31261001111111
+        }
+    },
+    {
+        "id": "6fb430b817b86b37240f8f318192f462c6eeb56b",
+        "name": "Archer",
+        "object": "Globular Cluster",
+        "constellation": {
+            "abbr": "Sgr",
+            "name": "Sagittarius",
+            "genitive": "Sagittarii",
+            "en": "archer"
+        },
+        "magnitude": 8,
+        "discoverer": "Méchain",
+        "distance": 78500,
+        "image": "/images/messier/M075.jpg",
+        "messier": "M75",
+        "ngc": "6864",
+        "season": "Summer",
+        "year": "1780",
+        "ra": "20h06m04.84s",
+        "dec": "-21d55m20.0s",
+        "visible": {
+            "label": "Sometimes Visible",
+            "deg": 64.73872112222222
+        }
+    },
+    {
+        "id": "97dca12c94a942e4a705d385b3789f7b413cbcde",
+        "name": "Lion",
+        "object": "Galaxy",
+        "constellation": {
+            "abbr": "Leo",
+            "name": "Leo",
+            "genitive": "Leonis",
+            "en": "lion"
+        },
+        "magnitude": 9,
+        "discoverer": "Méchain",
+        "distance": 20300000,
+        "image": "/images/messier/M095.jpg",
+        "messier": "M95",
+        "ngc": "3351",
+        "season": "Spring",
+        "year": "1781",
+        "ra": "10h43m57.70s",
+        "dec": "+11d42m13.7s",
+        "visible": {
+            "label": "Sometimes Visible",
+            "deg": 54.52011001111111
+        }
+    },
+    {
+        "id": "fb83e2388fa0677bdd7a888bbab2bf6c60339aba",
+        "name": "Great Dog",
+        "object": "Open Cluster",
+        "constellation": {
+            "abbr": "CMa",
+            "name": "Canis Major",
+            "genitive": "Canis Majoris",
+            "en": "greater dog"
+        },
+        "magnitude": 4,
+        "discoverer": "Hodierna",
+        "distance": 1600,
+        "image": "/images/messier/M041.jpg",
+        "messier": "M41",
+        "ngc": "2287",
+        "season": "Winter",
+        "year": "1654",
+        "ra": "06h45m59.94s",
+        "dec": "-20d45m15.2s",
+        "visible": {
+            "label": "Sometimes Visible",
+            "deg": 63.57066556666666
+        }
+    },
+    {
+        "id": "6c60248c08580e6b00fbd15fc64b678bcb554518",
+        "name": "Stern,Poop deck",
+        "object": "Open Cluster",
+        "constellation": {
+            "abbr": "Pup",
+            "name": "Puppis",
+            "genitive": "Puppis",
+            "en": "poop deck"
+        },
+        "magnitude": 6,
+        "discoverer": "Messier",
+        "distance": 3200,
+        "image": "/images/messier/M046.jpg",
+        "messier": "M46",
+        "ngc": "2437",
+        "season": "Winter",
+        "year": "1771",
+        "ra": "07h41m46.82s",
+        "dec": "-14d48m36.0s",
+        "visible": {
+            "label": "Sometimes Visible",
+            "deg": 57.6264989
+        }
+    },
+    {
+        "id": "f7e5591290b9e9b7cf126919a8d2b12faabbcee6",
+        "name": "Virgin",
+        "object": "Galaxy",
+        "constellation": {
+            "abbr": "Vir",
+            "name": "Virgo",
+            "genitive": "Virginis",
+            "en": "virgin or maiden"
+        },
+        "magnitude": 9,
+        "discoverer": "Koehler",
+        "distance": 41000000,
+        "image": "/images/messier/M059.jpg",
+        "messier": "M59",
+        "ngc": "4621",
+        "season": "Spring",
+        "year": "1779",
+        "ra": "12h42m02.24s",
+        "dec": "+11d38m49.3s",
+        "visible": {
+            "label": "Sometimes Visible",
+            "deg": 54.46344334444444
+        }
+    },
+    {
+        "id": "b93b06165946877ab2d01c5fbf7b15f4c9765eb0",
+        "name": "Virgin",
+        "object": "Galaxy",
+        "constellation": {
+            "abbr": "Vir",
+            "name": "Virgo",
+            "genitive": "Virginis",
+            "en": "virgin or maiden"
+        },
+        "magnitude": 8,
+        "discoverer": "Messier",
+        "distance": 41000000,
+        "image": "/images/messier/M049.jpg",
+        "messier": "M49",
+        "ngc": "4472",
+        "season": "Spring",
+        "year": "1771",
+        "ra": "12h29m46.76s",
+        "dec": "+08d00m01.7s",
+        "visible": {
+            "label": "Sometimes Visible",
+            "deg": 50.816776677777774
+        }
+    },
+    {
+        "id": "0a4d6e998446e99fd6e6e90401a8e2ce825a064b",
+        "name": "Hair of Berenice",
+        "object": "Galaxy",
+        "constellation": {
+            "abbr": "Com",
+            "name": "Coma Berenices",
+            "genitive": "Comae Berenices",
+            "en": "Berenice's hair"
+        },
+        "magnitude": 9,
+        "discoverer": "Méchain",
+        "distance": 41000000,
+        "image": "/images/messier/M099.jpg",
+        "messier": "M99",
+        "ngc": "4254",
+        "season": "Spring",
+        "year": "1781",
+        "ra": "12h18m49.60s",
+        "dec": "+14d24m59.4s",
+        "visible": {
+            "label": "Sometimes Visible",
+            "deg": 57.23288778888889
+        }
+    },
+    {
+        "id": "541f12b0672cd4f6a9887cccecdcbc3aa381fb34",
+        "name": "Archer",
+        "object": "Emission Nebula / Nébuleuse à émission",
+        "constellation": {
+            "abbr": "Sgr",
+            "name": "Sagittarius",
+            "genitive": "Sagittarii",
+            "en": "archer"
+        },
+        "magnitude": 5,
+        "discoverer": "Flamsteed",
+        "distance": 4850,
+        "image": "/images/messier/M008.jpg",
+        "messier": "M8",
+        "ngc": "6523",
+        "season": "Summer",
+        "year": "1680",
+        "ra": "18h03m41.27s",
+        "dec": "-24d22m48.6s",
+        "visible": {
+            "label": "Sometimes Visible",
+            "deg": 67.1964989
+        }
+    },
+    {
+        "id": "5c20f3a7ed2c2ccdf8610308eedd414e782aded8",
+        "name": "Shield",
+        "object": "Open Cluster",
+        "constellation": {
+            "abbr": "Sct",
+            "name": "Scutum",
+            "genitive": "Scuti",
+            "en": "shield (of Sobieski)"
+        },
+        "magnitude": 5,
+        "discoverer": "Kirch",
+        "distance": 5600,
+        "image": "/images/messier/M011.jpg",
+        "messier": "M11",
+        "ngc": "6705",
+        "season": "Summer",
+        "year": "1681",
+        "ra": "18h51m05.99s",
+        "dec": "-06d16m12.1s",
+        "visible": {
+            "label": "Sometimes Visible",
+            "deg": 49.086498899999995
+        }
+    },
+    {
+        "id": "669d15b09eb016ae8916cb427e633744ad3604f1",
+        "name": "Archer",
+        "object": "Open Cluster",
+        "constellation": {
+            "abbr": "Sgr",
+            "name": "Sagittarius",
+            "genitive": "Sagittarii",
+            "en": "archer"
+        },
+        "magnitude": 5,
+        "discoverer": "Messier",
+        "distance": 2150,
+        "image": "/images/messier/M023.jpg",
+        "messier": "M23",
+        "ngc": "6494",
+        "season": "Summer",
+        "year": "1764",
+        "ra": "17h57m04.77s",
+        "dec": "-18d59m07.2s",
+        "visible": {
+            "label": "Sometimes Visible",
+            "deg": 61.80177667777778
+        }
+    },
+    {
+        "id": "b70a8f1742eb9e93924fbab9d7d3c43d926d2b19",
+        "name": "Archer",
+        "object": "Open Cluster",
+        "constellation": {
+            "abbr": "Sgr",
+            "name": "Sagittarius",
+            "genitive": "Sagittarii",
+            "en": "archer"
+        },
+        "magnitude": 4,
+        "discoverer": "Chéseaux",
+        "distance": 2060,
+        "image": "/images/messier/M025.jpg",
+        "messier": "M25",
+        "ngc": "IC4725",
+        "season": "Summer",
+        "year": "1746",
+        "ra": "18h31m46.77s",
+        "dec": "-19d06m53.8s",
+        "visible": {
+            "label": "Sometimes Visible",
+            "deg": 61.931221122222226
+        }
+    },
+    {
+        "id": "360820525445f8b820bfe076a85c620c061733a5",
+        "name": "Archer",
+        "object": "Globular Cluster",
+        "constellation": {
+            "abbr": "Sgr",
+            "name": "Sagittarius",
+            "genitive": "Sagittarii",
+            "en": "archer"
+        },
+        "magnitude": 7,
+        "discoverer": "Messier",
+        "distance": 49000,
+        "image": "/images/messier/M054.jpg",
+        "messier": "M54",
+        "ngc": "6715",
+        "season": "Summer",
+        "year": "1778",
+        "ra": "18h55m03.27s",
+        "dec": "-30d28m42.6s",
+        "visible": {
+            "label": "Sometimes Visible",
+            "deg": 73.29483223333332
+        }
+    },
+    {
+        "id": "84c799723cfa16d28e1448c98440e66f9f0a7c84",
+        "name": "Serpent Holder",
+        "object": "Globular Cluster",
+        "constellation": {
+            "abbr": "Oph",
+            "name": "Ophiuchus",
+            "genitive": "Ophiuchi",
+            "en": "serpent-bearer"
+        },
+        "magnitude": 6,
+        "discoverer": "Messier",
+        "distance": 22500,
+        "image": "/images/messier/M062.jpg",
+        "messier": "M62",
+        "ngc": "6266",
+        "season": "Summer",
+        "year": "1771",
+        "ra": "17h01m12.60s",
+        "dec": "-30d06m44.5s",
+        "visible": {
+            "label": "Sometimes Visible",
+            "deg": 72.92872112222221
+        }
+    },
+    {
+        "id": "b5ca90dbb48a4c05232d6c46c95ae97bb370451a",
+        "name": "Hair of Berenice",
+        "object": "Galaxy",
+        "constellation": {
+            "abbr": "Com",
+            "name": "Coma Berenices",
+            "genitive": "Comae Berenices",
+            "en": "Berenice's hair"
+        },
+        "magnitude": 8,
+        "discoverer": "Bode",
+        "distance": 11800000,
+        "image": "/images/messier/M064.jpg",
+        "messier": "M64",
+        "ngc": "4826",
+        "season": "Spring",
+        "year": "1775",
+        "ra": "12h56m43.64s",
+        "dec": "+21d40m58.7s",
+        "visible": {
+            "label": "Sometimes Visible",
+            "deg": 64.49927667777777
+        }
+    },
+    {
+        "id": "aa7a42303eb3ad184038c4f943f04e584287c62b",
+        "name": "Crab",
+        "object": "Open Cluster",
+        "constellation": {
+            "abbr": "Cnc",
+            "name": "Cancer",
+            "genitive": "Cancri",
+            "en": "crab"
+        },
+        "magnitude": 6,
+        "discoverer": "Koehler",
+        "distance": 2600,
+        "image": "/images/messier/M067.jpg",
+        "messier": "M67",
+        "ngc": "2682",
+        "season": "Spring",
+        "year": "1778",
+        "ra": "08h51m20.13s",
+        "dec": "+11d48m43.0s",
+        "visible": {
+            "label": "Sometimes Visible",
+            "deg": 54.62844334444444
+        }
+    },
+    {
+        "id": "a9f07a5cd5013bdc68b040686e71e4b14d9dc2a0",
+        "name": "Arrow",
+        "object": "Globular Cluster",
+        "constellation": {
+            "abbr": "Sge",
+            "name": "Sagitta",
+            "genitive": "Sagittae",
+            "en": "arrow"
+        },
+        "magnitude": 8,
+        "discoverer": "Chéseaux",
+        "distance": 13000,
+        "image": "/images/messier/M071.jpg",
+        "messier": "M71",
+        "ngc": "6838",
+        "season": "Summer",
+        "year": "1746",
+        "ra": "19h53m46.11s",
+        "dec": "+18d46m42.2s",
+        "visible": {
+            "label": "Sometimes Visible",
+            "deg": 61.594832233333335
+        }
+    },
+    {
+        "id": "54d6807910bcab31e24fe7d35438ee13a956fb02",
+        "name": "Hair of Berenice",
+        "object": "Galaxy",
+        "constellation": {
+            "abbr": "Com",
+            "name": "Coma Berenices",
+            "genitive": "Comae Berenices",
+            "en": "Berenice's hair"
+        },
+        "magnitude": 10,
+        "discoverer": "Méchain",
+        "distance": 36000000,
+        "image": "/images/messier/M098.jpg",
+        "messier": "M98",
+        "ngc": "4192",
+        "season": "Spring",
+        "year": "1781",
+        "ra": "12h13m48.29s",
+        "dec": "+14d54m01.2s",
+        "visible": {
+            "label": "Sometimes Visible",
+            "deg": 57.71677667777777
+        }
+    },
+    {
+        "id": "0ebf3d10cb0145d80a354c35a123d04547e13b9b",
+        "name": "Spindle galaxy",
+        "object": "Galaxy",
+        "constellation": {
+            "abbr": "Dra",
+            "name": "Draco",
+            "genitive": "Draconis",
+            "en": "dragon"
+        },
+        "magnitude": 10,
+        "discoverer": "Méchain",
+        "distance": 23000000,
+        "image": "/images/messier/M102.jpg",
+        "messier": "M102",
+        "ngc": "5866",
+        "season": "Spring",
+        "year": "1781",
+        "ra": "15h6m0s",
+        "dec": "+55d45m0s",
+        "visible": {
+            "label": "Always Visible",
+            "deg": 98.5664989
+        }
+    },
+    {
+        "id": "f4d81807918cac30842aaea55affb9f95b185f41",
+        "name": "Cassiopeia",
+        "object": "Open Cluster",
+        "constellation": {
+            "abbr": "Cas",
+            "name": "Cassiopeia",
+            "genitive": "Cassiopeiae",
+            "en": "Cassiopeia (mythological character)"
+        },
+        "magnitude": 7,
+        "discoverer": "Méchain",
+        "distance": 8500,
+        "image": "/images/messier/M103.jpg",
+        "messier": "M103",
+        "ngc": "581",
+        "season": "Autumn",
+        "year": "1781",
+        "ra": "01h33m21.81s",
+        "dec": "+60d39m28.8s",
+        "visible": {
+            "label": "Always Visible",
+            "deg": 103.47427667777777
+        }
+    },
+    {
+        "id": "b4feffd7a52b297c5b76c325253c488a9ca868bb",
+        "name": "Hound Dogs",
+        "object": "Galaxy",
+        "constellation": {
+            "abbr": "CVn",
+            "name": "Canes Venatici",
+            "genitive": "Canum Venaticorum",
+            "en": "hunting dogs"
+        },
+        "magnitude": 8,
+        "discoverer": "Méchain",
+        "distance": 20000000,
+        "image": "/images/messier/M106.jpg",
+        "messier": "M106",
+        "ngc": "4258",
+        "season": "Spring",
+        "year": "1781",
+        "ra": "12h18m57.50s",
+        "dec": "+47d18m14.3s",
+        "visible": {
+            "label": "Always Visible",
+            "deg": 90.12038778888888
+        }
+    },
+    {
+        "id": "3a30daa6df575f943d43ca385d047270f83bf0ae",
+        "name": "Archer",
+        "object": "Globular Cluster",
+        "constellation": {
+            "abbr": "Sgr",
+            "name": "Sagittarius",
+            "genitive": "Sagittarii",
+            "en": "archer"
+        },
+        "magnitude": 8,
+        "discoverer": "Messier",
+        "distance": 65000,
+        "image": "/images/messier/M070.jpg",
+        "messier": "M70",
+        "ngc": "6681",
+        "season": "Summer",
+        "year": "1780",
+        "ra": "18h43m12.64s",
+        "dec": "-32d17m30.8s",
+        "visible": {
+            "label": "Sometimes Visible",
+            "deg": 75.10816556666666
+        }
+    },
+    {
+        "id": "c56c9f200c2aa5711548ae997bab7866912eadbc",
+        "name": "Unicorn",
+        "object": "Open Cluster",
+        "constellation": {
+            "abbr": "Mon",
+            "name": "Monoceros",
+            "genitive": "Monocerotis",
+            "en": "unicorn"
+        },
+        "magnitude": 5,
+        "discoverer": "Cassini",
+        "distance": 2950,
+        "image": "/images/messier/M050.jpg",
+        "messier": "M50",
+        "ngc": "2323",
+        "season": "Winter",
+        "year": "1710",
+        "ra": "07h02m40.47s",
+        "dec": "-08d21m50.5s",
+        "visible": {
+            "label": "Sometimes Visible",
+            "deg": 51.180387788888886
+        }
+    },
+    {
+        "id": "1e68cb201748947cf8dbdf676c0f8d6c05ecd4ac",
+        "name": "Virgin",
+        "object": "Galaxy",
+        "constellation": {
+            "abbr": "Vir",
+            "name": "Virgo",
+            "genitive": "Virginis",
+            "en": "virgin or maiden"
+        },
+        "magnitude": 9,
+        "discoverer": "Oriani",
+        "distance": 41000000,
+        "image": "/images/messier/M061.jpg",
+        "messier": "M61",
+        "ngc": "4303",
+        "season": "Spring",
+        "year": "1779",
+        "ra": "12h21m54.90s",
+        "dec": "+04d28m25.1s",
+        "visible": {
+            "label": "Sometimes Visible",
+            "deg": 47.29011001111111
+        }
+    },
+    {
+        "id": "65abba2f90d219671c1b2cfec5a2a604e45c4277",
+        "name": "Winnecke 4",
+        "object": "Double star / Étoile Double",
+        "constellation": {
+            "abbr": "UMa",
+            "name": "Ursa Major",
+            "genitive": "Ursae Majoris",
+            "en": "great bear"
+        },
+        "magnitude": 9,
+        "discoverer": "Hevelius",
+        "distance": 510,
+        "image": "/images/messier/M040.jpg",
+        "messier": "M40",
+        "ngc": "4290",
+        "season": "Spring",
+        "year": "1660",
+        "ra": "12h22m18.999ss",
+        "dec": "+58d5m10.366s",
+        "visible": {
+            "label": "Always Visible",
+            "deg": 100.90261001111111
+        }
+    },
+    {
+        "id": "2fffb7ef8521c24d65b61ddd59e89338d068ed33",
+        "name": "Hound Dogs",
+        "object": "Galaxy",
+        "constellation": {
+            "abbr": "CVn",
+            "name": "Canes Venatici",
+            "genitive": "Canum Venaticorum",
+            "en": "hunting dogs"
+        },
+        "magnitude": 8,
+        "discoverer": "Méchain",
+        "distance": 32600000,
+        "image": "/images/messier/M094.jpg",
+        "messier": "M94",
+        "ngc": "4736",
+        "season": "Spring",
+        "year": "1781",
+        "ra": "12h50m53.06s",
+        "dec": "+41d07m13.6s",
+        "visible": {
+            "label": "Sometimes Visible",
+            "deg": 83.93677667777777
+        }
+    },
+    {
+        "id": "117d04010ac443aa0b6cc68478d17cf820a150d6",
+        "name": "Big Bear",
+        "object": "Planetary Nebula / Nébuleuse Planétaire",
+        "constellation": {
+            "abbr": "UMa",
+            "name": "Ursa Major",
+            "genitive": "Ursae Majoris",
+            "en": "great bear"
+        },
+        "magnitude": 11,
+        "discoverer": "Méchain",
+        "distance": 10000,
+        "image": "/images/messier/M097.jpg",
+        "messier": "M97",
+        "ngc": "3587",
+        "season": "Spring",
+        "year": "1781",
+        "ra": "11h14m47.71s",
+        "dec": "+55d01m08.5s",
+        "visible": {
+            "label": "Always Visible",
+            "deg": 97.83538778888888
+        }
+    },
+    {
+        "id": "94859a7addaa23df0fe0f69b4bdf0a54498bdc0d",
+        "name": "Big Bear",
+        "object": "Galaxy",
+        "constellation": {
+            "abbr": "UMa",
+            "name": "Ursa Major",
+            "genitive": "Ursae Majoris",
+            "en": "great bear"
+        },
+        "magnitude": 6,
+        "discoverer": "Bode",
+        "distance": 8500000,
+        "image": "/images/messier/M081.jpg",
+        "messier": "M81",
+        "ngc": "3031",
+        "season": "Spring",
+        "year": "1774",
+        "ra": "09h55m33.17s",
+        "dec": "+69d03m55.1s",
+        "visible": {
+            "label": "Always Visible",
+            "deg": 111.88177667777778
+        }
+    },
+    {
+        "id": "253d9c09aede7c59fdcca28e15df0cba0199b502",
+        "name": "Hercules",
+        "object": "Globular Cluster",
+        "constellation": {
+            "abbr": "Her",
+            "name": "Hercules",
+            "genitive": "Herculis",
+            "en": "Hercules (mythological character)"
+        },
+        "magnitude": 6,
+        "discoverer": "Bode",
+        "distance": 28400,
+        "image": "/images/messier/M092.jpg",
+        "messier": "M92",
+        "ngc": "6341",
+        "season": "Summer",
+        "year": "1777",
+        "ra": "17h17m07.27s",
+        "dec": "+43d08m11.5s",
+        "visible": {
+            "label": "Sometimes Visible",
+            "deg": 85.95288778888889
+        }
+    },
+    {
+        "id": "3a2c6caa9e7961e3a9c96b700ded60f63edb09fe",
+        "name": "Virgin",
+        "object": "Galaxy",
+        "constellation": {
+            "abbr": "Vir",
+            "name": "Virgo",
+            "genitive": "Virginis",
+            "en": "virgin or maiden"
+        },
+        "magnitude": 9,
+        "discoverer": "Messier",
+        "distance": 41000000,
+        "image": "/images/messier/M090.jpg",
+        "messier": "M90",
+        "ngc": "4560",
+        "season": "Spring",
+        "year": "1781",
+        "ra": "12h36m49.79s",
+        "dec": "+13d09m46.6s",
+        "visible": {
+            "label": "Sometimes Visible",
+            "deg": 55.979276677777776
+        }
+    },
+    {
+        "id": "93bfd492e9a29519ba50c152095939dbe6f38397",
+        "name": "Virgin",
+        "object": "Galaxy",
+        "constellation": {
+            "abbr": "Vir",
+            "name": "Virgo",
+            "genitive": "Virginis",
+            "en": "virgin or maiden"
+        },
+        "magnitude": 8,
+        "discoverer": "Messier",
+        "distance": 63000000,
+        "image": "/images/messier/M087.jpg",
+        "messier": "M87",
+        "ngc": "4486",
+        "season": "Spring",
+        "year": "1781",
+        "ra": "12h30m49.42s",
+        "dec": "+12d23m28.0s",
+        "visible": {
+            "label": "Sometimes Visible",
+            "deg": 55.20761001111111
+        }
+    },
+    {
+        "id": "a5e6f14ba70225c1b1445bef89953ef99ecc57ac",
+        "name": "Water Bearer",
+        "object": "Globular Cluster",
+        "constellation": {
+            "abbr": "Aqr",
+            "name": "Aquarius",
+            "genitive": "Aquarii",
+            "en": "water-bearer"
+        },
+        "magnitude": 6,
+        "discoverer": "Maraldi",
+        "distance": 55000,
+        "image": "/images/messier/M002.jpg",
+        "messier": "M2",
+        "ngc": "7089",
+        "season": "Autumn",
+        "year": "1746",
+        "ra": "21h33m27.01s",
+        "dec": "-00d49m23.9s",
+        "visible": {
+            "label": "Sometimes Visible",
+            "deg": 43.639554455555555
+        }
+    },
+    {
+        "id": "9cd8e4f0feb46bd6e414061f2b6171f9e3bcf6c5",
+        "name": "Scorpion",
+        "object": "Open Cluster",
+        "constellation": {
+            "abbr": "Sco",
+            "name": "Scorpius",
+            "genitive": "Scorpii",
+            "en": "scorpion"
+        },
+        "magnitude": 4,
+        "discoverer": "Hodierna",
+        "distance": 1300,
+        "image": "/images/messier/M006.jpg",
+        "messier": "M6",
+        "ngc": "6504",
+        "season": "Summer",
+        "year": "1654",
+        "ra": "17h40m20.75s",
+        "dec": "-32d15m15.0s",
+        "visible": {
+            "label": "Sometimes Visible",
+            "deg": 75.07066556666666
+        }
+    },
+    {
+        "id": "de7f6e6fb1489d10fa53b04e69ec13d88b6b6525",
+        "name": "Archer",
+        "object": "Emission Nebula / Nébuleuse à émission",
+        "constellation": {
+            "abbr": "Sgr",
+            "name": "Sagittarius",
+            "genitive": "Sagittarii",
+            "en": "archer"
+        },
+        "magnitude": 6,
+        "discoverer": "Chéseaux",
+        "distance": 5870,
+        "image": "/images/messier/M017.jpg",
+        "messier": "M17",
+        "ngc": "6618",
+        "season": "Summer",
+        "year": "1746",
+        "ra": "18h20m47.11s",
+        "dec": "-16d10m17.5s",
+        "visible": {
+            "label": "Sometimes Visible",
+            "deg": 58.98788778888889
+        }
+    },
+    {
+        "id": "639f792ca54b38f664b558943a986024b1cee254",
+        "name": "Little Fox",
+        "object": "Planetary Nebula / Nébuleuse Planétaire",
+        "constellation": {
+            "abbr": "Vul",
+            "name": "Vulpecula",
+            "genitive": "Vulpeculae",
+            "en": "fox"
+        },
+        "magnitude": 8,
+        "discoverer": "Messier",
+        "distance": 980,
+        "image": "/images/messier/M027.jpg",
+        "messier": "M27",
+        "ngc": "6853",
+        "season": "Summer",
+        "year": "1764",
+        "ra": "19h59m36.38s",
+        "dec": "+22d43m15.7s",
+        "visible": {
+            "label": "Sometimes Visible",
+            "deg": 65.53733223333333
+        }
+    },
+    {
+        "id": "2ab6ebd2d2756d678b215ea3b0d69d48e7c64338",
+        "name": "Archer",
+        "object": "Globular Cluster",
+        "constellation": {
+            "abbr": "Sgr",
+            "name": "Sagittarius",
+            "genitive": "Sagittarii",
+            "en": "archer"
+        },
+        "magnitude": 6,
+        "discoverer": "Messier",
+        "distance": 19000,
+        "image": "/images/messier/M028.jpg",
+        "messier": "M28",
+        "ngc": "6626",
+        "season": "Summer",
+        "year": "1764",
+        "ra": "18h24m32.89s",
+        "dec": "-24d52m11.4s",
+        "visible": {
+            "label": "Sometimes Visible",
+            "deg": 67.68622112222222
+        }
+    },
+    {
+        "id": "be63ccade50692c9fe414f04fb54c60c20032fa9",
+        "name": "Big Bear",
+        "object": "Galaxy",
+        "constellation": {
+            "abbr": "UMa",
+            "name": "Ursa Major",
+            "genitive": "Ursae Majoris",
+            "en": "great bear"
+        },
+        "magnitude": 7,
+        "discoverer": "Méchain",
+        "distance": 23000000,
+        "image": "/images/messier/M101.jpg",
+        "messier": "M101",
+        "ngc": "5457",
+        "season": "Spring",
+        "year": "1781",
+        "ra": "14h03m12.54s",
+        "dec": "+54d20m56.2s",
+        "visible": {
+            "label": "Always Visible",
+            "deg": 97.16538778888889
+        }
+    },
+    {
+        "id": "5c46ca0f8251b16d0894e276a3990104686d8f1d",
+        "name": "Hair of Berenice",
+        "object": "Galaxy",
+        "constellation": {
+            "abbr": "Com",
+            "name": "Coma Berenices",
+            "genitive": "Comae Berenices",
+            "en": "Berenice's hair"
+        },
+        "magnitude": 9,
+        "discoverer": "Méchain",
+        "distance": 41000000,
+        "image": "/images/messier/M085.jpg",
+        "messier": "M85",
+        "ngc": "4382",
+        "season": "Spring",
+        "year": "1781",
+        "ra": "12h25m24.11s",
+        "dec": "+18d11m29.4s",
+        "visible": {
+            "label": "Sometimes Visible",
+            "deg": 61.00788778888889
+        }
+    },
+    {
+        "id": "aada6474e7e3a7112ffa454a3e49e5009b45af79",
+        "name": "Hound Dogs",
+        "object": "Galaxy",
+        "constellation": {
+            "abbr": "CVn",
+            "name": "Canes Venatici",
+            "genitive": "Canum Venaticorum",
+            "en": "hunting dogs"
+        },
+        "magnitude": 8,
+        "discoverer": "Méchain",
+        "distance": 23800000,
+        "image": "/images/messier/M063.jpg",
+        "messier": "M63",
+        "ngc": "5055",
+        "season": "Spring",
+        "year": "1779",
+        "ra": "13h15m49.33s",
+        "dec": "+42d01m45.4s",
+        "visible": {
+            "label": "Sometimes Visible",
+            "deg": 84.84566556666667
+        }
+    },
+    {
+        "id": "cb160838a0c6a54585a2f03b2781d6fd1c64a217",
+        "name": "Perseus",
+        "object": "Planetary Nebula / Nébuleuse Planétaire",
+        "constellation": {
+            "abbr": "Per",
+            "name": "Perseus",
+            "genitive": "Persei",
+            "en": "Perseus (mythological character)"
+        },
+        "magnitude": 10,
+        "discoverer": "Méchain",
+        "distance": 8200,
+        "image": "/images/messier/M076.jpg",
+        "messier": "M76",
+        "ngc": "650",
+        "season": "Autumn",
+        "year": "1780",
+        "ra": "01h42m19.69s",
+        "dec": "+51d34m31.7s",
+        "visible": {
+            "label": "Always Visible",
+            "deg": 94.39177667777778
+        }
+    },
+    {
+        "id": "5a0e0f94c780319a47fe86f05d539c0b44629655",
+        "name": "Scorpion",
+        "object": "Globular Cluster",
+        "constellation": {
+            "abbr": "Sco",
+            "name": "Scorpius",
+            "genitive": "Scorpii",
+            "en": "scorpion"
+        },
+        "magnitude": 7,
+        "discoverer": "Messier",
+        "distance": 36000,
+        "image": "/images/messier/M080.jpg",
+        "messier": "M80",
+        "ngc": "6093",
+        "season": "Summer",
+        "year": "1781",
+        "ra": "16h17m02.51s",
+        "dec": "-22d58m30.4s",
+        "visible": {
+            "label": "Sometimes Visible",
+            "deg": 65.7914989
+        }
+    },
+    {
+        "id": "59ca87a232670caf14b2d78ffedba001c56abb18",
+        "name": "Stern,Poop deck",
+        "object": "Open Cluster",
+        "constellation": {
+            "abbr": "Pup",
+            "name": "Puppis",
+            "genitive": "Puppis",
+            "en": "poop deck"
+        },
+        "magnitude": 6,
+        "discoverer": "Messier",
+        "distance": 3600,
+        "image": "/images/messier/M093.jpg",
+        "messier": "M93",
+        "ngc": "2447",
+        "season": "Winter",
+        "year": "1781",
+        "ra": "07h44m29.23s",
+        "dec": "-23d51m11.1s",
+        "visible": {
+            "label": "Sometimes Visible",
+            "deg": 66.66955445555556
+        }
+    },
+    {
+        "id": "7840a5185db060dcc0c219ca1267be947c80bc8d",
+        "name": "Fishes",
+        "object": "Galaxy",
+        "constellation": {
+            "abbr": "Psc",
+            "name": "Pisces",
+            "genitive": "Piscium",
+            "en": "fishes"
+        },
+        "magnitude": 9,
+        "discoverer": "Méchain",
+        "distance": 26000000,
+        "image": "/images/messier/M074.jpg",
+        "messier": "M74",
+        "ngc": "628",
+        "season": "Autumn",
+        "year": "1780",
+        "ra": "01h36m41.75s",
+        "dec": "+15d47m01.2s",
+        "visible": {
+            "label": "Sometimes Visible",
+            "deg": 58.60011001111111
+        }
+    },
+    {
+        "id": "00f22385373cd4984aab0dc46faf7c269aed8bc7",
+        "name": "Virgin",
+        "object": "Galaxy",
+        "constellation": {
+            "abbr": "Vir",
+            "name": "Virgo",
+            "genitive": "Virginis",
+            "en": "virgin or maiden"
+        },
+        "magnitude": 9,
+        "discoverer": "Messier",
+        "distance": 41000000,
+        "image": "/images/messier/M089.jpg",
+        "messier": "M89",
+        "ngc": "4552",
+        "season": "Spring",
+        "year": "1781",
+        "ra": "12h35m39.81s",
+        "dec": "+12d33m22.8s",
+        "visible": {
+            "label": "Sometimes Visible",
+            "deg": 55.37261001111111
+        }
+    },
+    {
+        "id": "d668760d5ac4e80fdf0b17dc72c697e6cb8345ce",
+        "name": "Charioteer",
+        "object": "Open Cluster",
+        "constellation": {
+            "abbr": "Aur",
+            "name": "Auriga",
+            "genitive": "Aurigae",
+            "en": "charioteer"
+        },
+        "magnitude": 5,
+        "discoverer": "Hodierna",
+        "distance": 3600,
+        "image": "/images/messier/M037.jpg",
+        "messier": "M37",
+        "ngc": "2099",
+        "season": "Winter",
+        "year": "1654",
+        "ra": "05h52m18.35s",
+        "dec": "+32d33m10.8s",
+        "visible": {
+            "label": "Sometimes Visible",
+            "deg": 75.36927667777778
+        }
+    },
+    {
+        "id": "30e2b12cdbb38d2dae6a79261c809b3839fec934",
+        "name": "Charioteer",
+        "object": "Open Cluster",
+        "constellation": {
+            "abbr": "Aur",
+            "name": "Auriga",
+            "genitive": "Aurigae",
+            "en": "charioteer"
+        },
+        "magnitude": 6,
+        "discoverer": "Hodierna",
+        "distance": 3700,
+        "image": "/images/messier/M036.jpg",
+        "messier": "M36",
+        "ngc": "1960",
+        "season": "Winter",
+        "year": "1654",
+        "ra": "05h36m17.74s",
+        "dec": "+34d08m26.7s",
+        "visible": {
+            "label": "Sometimes Visible",
+            "deg": 76.95705445555555
+        }
+    },
+    {
+        "id": "ad604cb621492d541c5b078f7d7479cad3ae45dc",
+        "name": "Hydra, Sea Snake",
+        "object": "Open Cluster",
+        "constellation": {
+            "abbr": "Hya",
+            "name": "Hydra",
+            "genitive": "Hydrae",
+            "en": "Hydra (mythological creature)"
+        },
+        "magnitude": 5,
+        "discoverer": "Messier",
+        "distance": 1500,
+        "image": "/images/messier/M048.jpg",
+        "messier": "M48",
+        "ngc": "2548",
+        "season": "Winter",
+        "year": "1771",
+        "ra": "08h13m43.18s",
+        "dec": "-05d45m01.6s",
+        "visible": {
+            "label": "Sometimes Visible",
+            "deg": 48.566776677777774
+        }
+    },
+    {
+        "id": "989b38b45acaf01958f343c26cf04467ee091387",
+        "name": "Andromeda",
+        "object": "Galaxy",
+        "constellation": {
+            "abbr": "And",
+            "name": "Andromeda",
+            "genitive": "Andromedae",
+            "en": "Andromeda (mythological character)"
+        },
+        "magnitude": 3,
+        "distance": 2500000,
+        "image": "/images/messier/M031.jpg",
+        "messier": "M31",
+        "ngc": "224",
+        "season": "Autumn",
+        "ra": "00h42m44.35s",
+        "dec": "+41d16m08.6s",
+        "visible": {
+            "label": "Sometimes Visible",
+            "deg": 84.08538778888888
+        }
+    },
+    {
+        "id": "2d8df4c16bece39640643bcc1f3f506a5a3a6e9b",
+        "name": "Crow",
+        "object": "Galaxy",
+        "constellation": {
+            "abbr": "Crv",
+            "name": "Corvus",
+            "genitive": "Corvi",
+            "en": "crow"
+        },
+        "magnitude": 8,
+        "discoverer": "Méchain",
+        "distance": 40000000,
+        "image": "/images/messier/M104.jpg",
+        "messier": "M104",
+        "ngc": "4594",
+        "season": "Spring",
+        "year": "1781",
+        "ra": "12h39m59.43s",
+        "dec": "-11d37m23.0s",
+        "visible": {
+            "label": "Sometimes Visible",
+            "deg": 54.43955445555555
+        }
+    },
+    {
+        "id": "4bec0c91896e4830e1d9b5f79df021b55b949e1f",
+        "name": "Lion",
+        "object": "Galaxy",
+        "constellation": {
+            "abbr": "Leo",
+            "name": "Leo",
+            "genitive": "Leonis",
+            "en": "lion"
+        },
+        "magnitude": 9,
+        "discoverer": "Méchain",
+        "distance": 21500000,
+        "image": "/images/messier/M105.jpg",
+        "messier": "M105",
+        "ngc": "3379",
+        "season": "Spring",
+        "year": "1781",
+        "ra": "10h47m49.59s",
+        "dec": "+12d34m53.8s",
+        "visible": {
+            "label": "Sometimes Visible",
+            "deg": 55.39788778888889
+        }
+    },
+    {
+        "id": "0be1e70736bf4b50b61b80f681cc632ab761a771",
+        "name": "Lion",
+        "object": "Galaxy",
+        "constellation": {
+            "abbr": "Leo",
+            "name": "Leo",
+            "genitive": "Leonis",
+            "en": "lion"
+        },
+        "magnitude": 9,
+        "discoverer": "Méchain",
+        "distance": 29300000,
+        "image": "/images/messier/M096.jpg",
+        "messier": "M96",
+        "ngc": "3368",
+        "season": "Spring",
+        "year": "1781",
+        "ra": "10h46m45.74s",
+        "dec": "+11d49m11.8s",
+        "visible": {
+            "label": "Sometimes Visible",
+            "deg": 54.636221122222224
+        }
+    },
+    {
+        "id": "62e0c1628c18d2cecd5a104833f2cb9cf4019bfa",
+        "name": "Eagle Nebula",
+        "object": "Emission Nebula / Nébuleuse à émission",
+        "constellation": {
+            "abbr": "Ser",
+            "name": "Serpens",
+            "genitive": "Serpentis",
+            "en": "snake"
+        },
+        "magnitude": 6,
+        "discoverer": "Chéseaux",
+        "distance": 5870,
+        "image": "/images/messier/M016.jpg",
+        "messier": "M16",
+        "ngc": "6611",
+        "season": "Summer",
+        "year": "1746",
+        "ra": "18h18m48.17s",
+        "dec": "-13d48m26.0s",
+        "visible": {
+            "label": "Sometimes Visible",
+            "deg": 56.62372112222222
+        }
+    },
+    {
+        "id": "4711300aca00784a458bda46fe99907dba2e595f",
+        "name": "Scorpion",
+        "object": "Globular Cluster",
+        "constellation": {
+            "abbr": "Sco",
+            "name": "Scorpius",
+            "genitive": "Scorpii",
+            "en": "scorpion"
+        },
+        "magnitude": 5,
+        "discoverer": "Chéseaux",
+        "distance": 9900,
+        "image": "/images/messier/M004.jpg",
+        "messier": "M4",
+        "ngc": "6121",
+        "season": "Summer",
+        "year": "1746",
+        "ra": "16h23m35.40s",
+        "dec": "-26d31m31.9s",
+        "visible": {
+            "label": "Sometimes Visible",
+            "deg": 69.34177667777777
+        }
+    },
+    {
+        "id": "b5c377ae83265de71ae922f56f1dc31a5d0af808",
+        "name": "Winged Horse",
+        "object": "Globular Cluster",
+        "constellation": {
+            "abbr": "Peg",
+            "name": "Pegasus",
+            "genitive": "Pegasi",
+            "en": "Pegasus (mythological creature)"
+        },
+        "magnitude": 6,
+        "discoverer": "Maraldi",
+        "distance": 49500,
+        "image": "/images/messier/M015.jpg",
+        "messier": "M15",
+        "ngc": "7078",
+        "season": "Autumn",
+        "year": "1746",
+        "ra": "21h29m58.38s",
+        "dec": "+12d10m00.6s",
+        "visible": {
+            "label": "Sometimes Visible",
+            "deg": 54.98316556666666
+        }
+    },
+    {
+        "id": "d6e93275af7f067739c4c102723ca12bef0ba7a4",
+        "name": "Archer",
+        "object": "Open Cluster",
+        "constellation": {
+            "abbr": "Sgr",
+            "name": "Sagittarius",
+            "genitive": "Sagittarii",
+            "en": "archer"
+        },
+        "magnitude": 6,
+        "discoverer": "Messier",
+        "distance": 4900,
+        "image": "/images/messier/M018.jpg",
+        "messier": "M18",
+        "ngc": "6613",
+        "season": "Summer",
+        "year": "1764",
+        "ra": "18h19m58.49s",
+        "dec": "-17d06m07.1s",
+        "visible": {
+            "label": "Sometimes Visible",
+            "deg": 59.91844334444444
+        }
+    },
+    {
+        "id": "bf8a3b52d304ee597160b0b38e48a9baac7da14a",
+        "name": "Archer",
+        "object": "Open Cluster",
+        "constellation": {
+            "abbr": "Sgr",
+            "name": "Sagittarius",
+            "genitive": "Sagittarii",
+            "en": "archer"
+        },
+        "magnitude": 5,
+        "discoverer": "Messier",
+        "distance": 4200,
+        "image": "/images/messier/M021.jpg",
+        "messier": "M21",
+        "ngc": "6531",
+        "season": "Summer",
+        "year": "1764",
+        "ra": "18h04m13.45s",
+        "dec": "-22d29m24.2s",
+        "visible": {
+            "label": "Sometimes Visible",
+            "deg": 65.30649890000001
+        }
+    },
+    {
+        "id": "308f7b51f801d9eb87eda212fc9312f7c6b5d5a8",
+        "name": "Twins",
+        "object": "Open Cluster",
+        "constellation": {
+            "abbr": "Gem",
+            "name": "Gemini",
+            "genitive": "Geminorum",
+            "en": "twins"
+        },
+        "magnitude": 5,
+        "discoverer": "Chéseaux",
+        "distance": 2800,
+        "image": "/images/messier/M035.jpg",
+        "messier": "M35",
+        "ngc": "2168",
+        "season": "Winter",
+        "year": "1746",
+        "ra": "06h09m05.06s",
+        "dec": "+24d20m19.1s",
+        "visible": {
+            "label": "Sometimes Visible",
+            "deg": 67.1551100111111
+        }
+    },
+    {
+        "id": "ce6e4ccc420e6bd76d9ebdf951011120f751ea32",
+        "name": "Hound Dogs",
+        "object": "Galaxy",
+        "constellation": {
+            "abbr": "CVn",
+            "name": "Canes Venatici",
+            "genitive": "Canum Venaticorum",
+            "en": "hunting dogs"
+        },
+        "magnitude": 8,
+        "discoverer": "Messier",
+        "distance": 37000000,
+        "image": "/images/messier/M051.jpg",
+        "messier": "M51",
+        "ngc": "5194",
+        "season": "Spring",
+        "year": "1773",
+        "ra": "13h29m52.71s",
+        "dec": "+47d11m42.6s",
+        "visible": {
+            "label": "Always Visible",
+            "deg": 90.01149889999999
+        }
+    },
+    {
+        "id": "72f3b097fa8f73d84a9f5573bc4a8523dda31b47",
+        "name": "Water Bearer",
+        "object": "Open Cluster",
+        "constellation": {
+            "abbr": "Aqr",
+            "name": "Aquarius",
+            "genitive": "Aquarii",
+            "en": "water-bearer"
+        },
+        "magnitude": 9,
+        "discoverer": "Messier",
+        "distance": 2511,
+        "image": "/images/messier/M073.jpg",
+        "messier": "M73",
+        "ngc": "6994",
+        "season": "Autumn",
+        "year": "1780",
+        "ra": "20h58m55.97s",
+        "dec": "-12d38m07.8s",
+        "visible": {
+            "label": "Sometimes Visible",
+            "deg": 55.45177667777777
+        }
+    },
+    {
+        "id": "5da1eeaef215fb3e6f354d67f77a6e4e1368c411",
+        "name": "Sea-monster",
+        "object": "Galaxy",
+        "constellation": {
+            "abbr": "Cet",
+            "name": "Cetus",
+            "genitive": "Ceti",
+            "en": "sea monster (whale)"
+        },
+        "magnitude": 8,
+        "discoverer": "Méchain",
+        "distance": 52000000,
+        "image": "/images/messier/M077.jpg",
+        "messier": "M77",
+        "ngc": "1068",
+        "season": "Autumn",
+        "year": "1780",
+        "ra": "02h42m40.71s",
+        "dec": "-00d00m47.8s",
+        "visible": {
+            "label": "Sometimes Visible",
+            "deg": 42.82955445555555
+        }
+    },
+    {
+        "id": "312167088175b1aedcaf589d78110b1ae744cced",
+        "name": "Orion, Hunter",
+        "object": "Reflection Nebula / Nébuleuse à réflexion",
+        "constellation": {
+            "abbr": "Ori",
+            "name": "Orion",
+            "genitive": "Orionis",
+            "en": "Orion (mythological character)"
+        },
+        "magnitude": 8,
+        "discoverer": "Méchain",
+        "distance": 1630,
+        "image": "/images/messier/M078.jpg",
+        "messier": "M78",
+        "ngc": "2068",
+        "season": "Winter",
+        "year": "1780",
+        "ra": "05h46m45.82s",
+        "dec": "+00d04m45.5s",
+        "visible": {
+            "label": "Sometimes Visible",
+            "deg": 42.895665566666665
+        }
+    },
+    {
+        "id": "c96cc8d69f2c9718f0fc940e88db4d4a60bf4c14",
+        "name": "Big Bear",
+        "object": "Galaxy",
+        "constellation": {
+            "abbr": "UMa",
+            "name": "Ursa Major",
+            "genitive": "Ursae Majoris",
+            "en": "great bear"
+        },
+        "magnitude": 8,
+        "discoverer": "Bode",
+        "distance": 8500000,
+        "image": "/images/messier/M082.jpg",
+        "messier": "M82",
+        "ngc": "3034",
+        "season": "Spring",
+        "year": "1774",
+        "ra": "09h55m52.73s",
+        "dec": "+69d40m45.8s",
+        "visible": {
+            "label": "Always Visible",
+            "deg": 112.49566556666667
+        }
+    },
+    {
+        "id": "70d12871392388489a0ef27afd589d7e4a74087c",
+        "name": "Hair of Berenice",
+        "object": "Galaxy",
+        "constellation": {
+            "abbr": "Com",
+            "name": "Coma Berenices",
+            "genitive": "Comae Berenices",
+            "en": "Berenice's hair"
+        },
+        "magnitude": 9,
+        "discoverer": "Messier",
+        "distance": 41000000,
+        "image": "/images/messier/M088.jpg",
+        "messier": "M88",
+        "ngc": "4501",
+        "season": "Spring",
+        "year": "1781",
+        "ra": "12h31m59.16s",
+        "dec": "+14d25m13.4s",
+        "visible": {
+            "label": "Sometimes Visible",
+            "deg": 57.236776677777776
+        }
+    },
+    {
+        "id": "ae6fda985899174e5a0d5fb27fbaff73bd2cb35a",
+        "name": "Archer",
+        "object": "Globular Cluster",
+        "constellation": {
+            "abbr": "Sgr",
+            "name": "Sagittarius",
+            "genitive": "Sagittarii",
+            "en": "archer"
+        },
+        "magnitude": 7,
+        "discoverer": "Lacaille",
+        "distance": 23500,
+        "image": "/images/messier/M069.jpg",
+        "messier": "M69",
+        "ngc": "6637",
+        "season": "Summer",
+        "year": "1751",
+        "ra": "18h31m23.23s",
+        "dec": "-32d20m52.7s",
+        "visible": {
+            "label": "Sometimes Visible",
+            "deg": 75.16427667777778
+        }
+    },
+    {
+        "id": "bd1bb27eef17011a31adc4aea90555eef6bbb5b0",
+        "name": "Lyre",
+        "object": "Planetary Nebula / Nébuleuse Planétaire",
+        "constellation": {
+            "abbr": "Lyr",
+            "name": "Lyra",
+            "genitive": "Lyrae",
+            "en": "lyre / harp"
+        },
+        "magnitude": 9,
+        "discoverer": "Darquier",
+        "distance": 1410,
+        "image": "/images/messier/M057.jpg",
+        "messier": "M57",
+        "ngc": "6720",
+        "season": "Summer",
+        "year": "1779",
+        "ra": "18h53m35.01s",
+        "dec": "+33d01m42.9s",
+        "visible": {
+            "label": "Sometimes Visible",
+            "deg": 75.84483223333334
+        }
+    },
+    {
+        "id": "7d320f644fc7d09c85cacc130826694118b7dea2",
+        "name": "Lion",
+        "object": "Galaxy",
+        "constellation": {
+            "abbr": "Leo",
+            "name": "Leo",
+            "genitive": "Leonis",
+            "en": "lion"
+        },
+        "magnitude": 9,
+        "discoverer": "Méchain",
+        "distance": 29000000,
+        "image": "/images/messier/M066.jpg",
+        "messier": "M66",
+        "ngc": "3627",
+        "season": "Spring",
+        "year": "1780",
+        "ra": "11h20m14.96s",
+        "dec": "+12d59m29.5s",
+        "visible": {
+            "label": "Sometimes Visible",
+            "deg": 55.80788778888889
+        }
+    },
+    {
+        "id": "9eac3f15615dad9a4adbb9fbbfb4e0a367ad3805",
+        "name": "Crab",
+        "object": "Open Cluster",
+        "constellation": {
+            "abbr": "Cnc",
+            "name": "Cancer",
+            "genitive": "Cancri",
+            "en": "crab"
+        },
+        "magnitude": 3,
+        "distance": 520,
+        "image": "/images/messier/M044.jpg",
+        "messier": "M44",
+        "ngc": "2632",
+        "season": "Spring",
+        "ra": "08h40m22.20s",
+        "dec": "+19d40m19.4s",
+        "visible": {
+            "label": "Sometimes Visible",
+            "deg": 62.48844334444445
+        }
+    },
+    {
+        "id": "e8abdfd4f3d132a4f99f75e9ff10d508d3f2b43b",
+        "name": "Hair of Berenice",
+        "object": "Galaxy",
+        "constellation": {
+            "abbr": "Com",
+            "name": "Coma Berenices",
+            "genitive": "Comae Berenices",
+            "en": "Berenice's hair"
+        },
+        "magnitude": 9,
+        "discoverer": "Méchain",
+        "distance": 41000000,
+        "image": "/images/messier/M100.jpg",
+        "messier": "M100",
+        "ngc": "4321",
+        "season": "Spring",
+        "year": "1781",
+        "ra": "12h22m54.83s",
+        "dec": "+15d49m18.5s",
+        "visible": {
+            "label": "Sometimes Visible",
+            "deg": 58.638165566666665
+        }
+    },
+    {
+        "id": "c1c0cf675326663246626cbb6351299afbb63c20",
+        "name": "Water Bearer",
+        "object": "Globular Cluster",
+        "constellation": {
+            "abbr": "Aqr",
+            "name": "Aquarius",
+            "genitive": "Aquarii",
+            "en": "water-bearer"
+        },
+        "magnitude": 9,
+        "discoverer": "Méchain",
+        "distance": 62000,
+        "image": "/images/messier/M072.jpg",
+        "messier": "M72",
+        "ngc": "6981",
+        "season": "Autumn",
+        "year": "1780",
+        "ra": "20h53m27.91s",
+        "dec": "-12d32m13.4s",
+        "visible": {
+            "label": "Sometimes Visible",
+            "deg": 55.35344334444444
+        }
+    },
+    {
+        "id": "f6bab809048e34b438fa77c5e142a149451094b1",
+        "name": "Hound Dogs",
+        "object": "Globular Cluster",
+        "constellation": {
+            "abbr": "CVn",
+            "name": "Canes Venatici",
+            "genitive": "Canum Venaticorum",
+            "en": "hunting dogs"
+        },
+        "magnitude": 6,
+        "discoverer": "Messier",
+        "distance": 48500,
+        "image": "/images/messier/M003.jpg",
+        "messier": "M3",
+        "ngc": "5272",
+        "season": "Spring",
+        "year": "1764",
+        "ra": "13h42m11.23s",
+        "dec": "+28d22m31.6s",
+        "visible": {
+            "label": "Sometimes Visible",
+            "deg": 71.19177667777778
+        }
+    },
+    {
+        "id": "67e0d0086d756529aa16bd3a3bd5b56bf634aaab",
+        "name": "Scorpion",
+        "object": "Open Cluster",
+        "constellation": {
+            "abbr": "Sco",
+            "name": "Scorpius",
+            "genitive": "Scorpii",
+            "en": "scorpion"
+        },
+        "magnitude": 3,
+        "discoverer": "Ptolémée",
+        "distance": 780,
+        "image": "/images/messier/M007.jpg",
+        "messier": "M7",
+        "ngc": "6475",
+        "season": "Summer",
+        "ra": "17h53m51.18s",
+        "dec": "-34d47m34.2s",
+        "visible": {
+            "label": "Sometimes Visible",
+            "deg": 77.60927667777779
+        }
+    },
+    {
+        "id": "f9966a70c362bbee6a4bfcc080a63638b44491df",
+        "name": "",
+        "object": "Globular Cluster",
+        "constellation": {
+            "abbr": "Ser",
+            "name": "Serpens",
+            "genitive": "Serpentis",
+            "en": "snake"
+        },
+        "magnitude": 5,
+        "discoverer": "Kirch",
+        "distance": 24800,
+        "image": "/images/messier/M005.jpg",
+        "messier": "M5",
+        "ngc": "5904",
+        "season": "Spring",
+        "year": "1702",
+        "ra": "15h18m33.75s",
+        "dec": "+02d04m57.7s",
+        "visible": {
+            "label": "Sometimes Visible",
+            "deg": 44.8989989
+        }
+    },
+    {
+        "id": "fb2479b25724a2834021237f7ed1cd5d6811d4f0",
+        "name": "Swan",
+        "object": "Open Cluster",
+        "constellation": {
+            "abbr": "Cyg",
+            "name": "Cygnus",
+            "genitive": "Cygni",
+            "en": "swan or Northern Cross"
+        },
+        "magnitude": 4,
+        "discoverer": "Le Gentil",
+        "distance": 880,
+        "image": "/images/messier/M039.jpg",
+        "messier": "M39",
+        "ngc": "7092",
+        "season": "Autumn",
+        "year": "1750",
+        "ra": "21h31m48.32s",
+        "dec": "+48d26m17.4s",
+        "visible": {
+            "label": "Always Visible",
+            "deg": 91.25455445555555
+        }
+    },
+    {
+        "id": "c3496d3f5fe7cea72b0fe2f9baa28feaf7eff791",
+        "name": "Swan",
+        "object": "Open Cluster",
+        "constellation": {
+            "abbr": "Cyg",
+            "name": "Cygnus",
+            "genitive": "Cygni",
+            "en": "swan or Northern Cross"
+        },
+        "magnitude": 6,
+        "discoverer": "Messier",
+        "distance": 4100,
+        "image": "/images/messier/M029.jpg",
+        "messier": "M29",
+        "ngc": "6913",
+        "season": "Summer",
+        "year": "1764",
+        "ra": "20h23m57.77s",
+        "dec": "+38d30m27.6s",
+        "visible": {
+            "label": "Sometimes Visible",
+            "deg": 81.32399889999999
+        }
+    },
+    {
+        "id": "89b6602da3c4d09b73b6d2069e73756720549ea4",
+        "name": "Serpent Holder",
+        "object": "Globular Cluster",
+        "constellation": {
+            "abbr": "Oph",
+            "name": "Ophiuchus",
+            "genitive": "Ophiuchi",
+            "en": "serpent-bearer"
+        },
+        "magnitude": 8,
+        "discoverer": "Méchain",
+        "distance": 19200,
+        "image": "/images/messier/M107.jpg",
+        "messier": "M107",
+        "ngc": "6171",
+        "season": "Summer",
+        "year": "1782",
+        "ra": "16h32m31.92s",
+        "dec": "-13d03m13.1s",
+        "visible": {
+            "label": "Sometimes Visible",
+            "deg": 55.87011001111111
+        }
+    },
+    {
+        "id": "24b23c418b9688e6d57e5cdfa76632f512487449",
+        "name": "Big Bear",
+        "object": "Galaxy",
+        "constellation": {
+            "abbr": "UMa",
+            "name": "Ursa Major",
+            "genitive": "Ursae Majoris",
+            "en": "great bear"
+        },
+        "magnitude": 10,
+        "discoverer": "Méchain",
+        "distance": 23500000,
+        "image": "/images/messier/M108.jpg",
+        "messier": "M108",
+        "ngc": "3556",
+        "season": "Spring",
+        "year": "1782",
+        "ra": "11h11m30.97s",
+        "dec": "+55d40m26.8s",
+        "visible": {
+            "label": "Always Visible",
+            "deg": 98.49038778888888
+        }
+    }
+]
